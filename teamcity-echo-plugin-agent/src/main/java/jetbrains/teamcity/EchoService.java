@@ -5,7 +5,6 @@ import jetbrains.buildServer.agent.runner.BuildServiceAdapter;
 import jetbrains.buildServer.agent.runner.ProgramCommandLine;
 import jetbrains.buildServer.agent.runner.SimpleProgramCommandLine;
 import jetbrains.buildServer.util.FileUtil;
-import jetbrains.buildServer.util.TCStreamUtil;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.File;
@@ -22,6 +21,7 @@ public class EchoService extends BuildServiceAdapter {
   public ProgramCommandLine makeProgramCommandLine() throws RunBuildException {
 
     final String message = getRunnerParameters().get(EchoRunnerConstants.MESSAGE_KEY);
+    final String jarFile = getRunnerParameters().get(EchoRunnerConstants.IQ_CLIJARFILE_KEY);
     final String iq_server = getRunnerParameters().get(EchoRunnerConstants.IQ_SERVER_KEY);
     final String username = getRunnerParameters().get(EchoRunnerConstants.IQ_USERNAME_KEY);
     final String password = getRunnerParameters().get(EchoRunnerConstants.IQ_PASSWORD_KEY);
@@ -33,7 +33,8 @@ public class EchoService extends BuildServiceAdapter {
 
 
 //    final String scriptContent = "echo " + message + " > echo.txt";
-    final String scriptContent = String.format("java -jar C:\\Cameron\\Software\\nexus-iq-server-1.114.0-01-bundle\\nexus-iq-cli-1.114.0-01.jar -s %s -a %s:%s -i %s -r echo.txt %s", iq_server, username, password, applicationid, scantarget);
+
+    final String scriptContent = String.format("java -jar %s -s %s -a %s:%s -i %s -r results.json -t %s %s", jarFile, iq_server, username, password, applicationid, stage, scantarget);
 
     final String script = getCustomScript(scriptContent);
 

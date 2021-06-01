@@ -1,5 +1,6 @@
 package jetbrains.teamcity.web;
 
+import com.google.gson.Gson;
 import com.intellij.openapi.util.io.StreamUtil;
 import jetbrains.buildServer.serverSide.BuildsManager;
 import jetbrains.buildServer.serverSide.SBuild;
@@ -9,10 +10,13 @@ import jetbrains.buildServer.serverSide.artifacts.BuildArtifactsViewMode;
 import jetbrains.buildServer.web.openapi.BuildTab;
 import jetbrains.buildServer.web.openapi.PluginDescriptor;
 import jetbrains.buildServer.web.openapi.WebControllerManager;
+import jetbrains.teamcity.IQScanResult;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.IOException;
 import java.util.Map;
+
+
 
 public class EchoReport extends BuildTab {
   protected EchoReport(WebControllerManager manager, BuildsManager buildManager, PluginDescriptor descriptor) {
@@ -24,12 +28,19 @@ public class EchoReport extends BuildTab {
   protected void fillModel(@NotNull Map<String, Object> model, @NotNull SBuild build) {
 
     final BuildArtifacts buildArtifacts = build.getArtifacts(BuildArtifactsViewMode.VIEW_DEFAULT);
-    final BuildArtifactHolder artifact = buildArtifacts.findArtifact("echo.txt");
+    final BuildArtifactHolder artifact = buildArtifacts.findArtifact("results.json");
     if (artifact.isAvailable()) {
       try {
-        final String text = StreamUtil.readText(artifact.getArtifact().getInputStream());
-        model.put("text", text);
-        model.put("componentCount", "79");
+//        Reader reader = Files.newBufferedReader(artifact.getArtifact().);
+        final String resultsText = StreamUtil.readText(artifact.getArtifact().getInputStream());
+        Gson gson = new Gson();
+        IQScanResult result = gson.fromJson(resultsText, IQScanResult.class);
+        System.out.println(result.getScanID());
+        model.put("text", resultsText);
+        model.put("componentCount", result.getPolicyEvaluationResult().getAffectedComponentCount());
+        model.put("iqserverreport", result.getReportHTMLURL());
+        model.put("applicationid", result.getApplicationID());
+        model.put("test", "cameron");
 
         //now parse the text file
         //*********************************************************************************************
