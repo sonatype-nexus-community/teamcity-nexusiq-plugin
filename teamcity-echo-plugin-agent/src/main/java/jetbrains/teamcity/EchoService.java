@@ -22,8 +22,18 @@ public class EchoService extends BuildServiceAdapter {
   public ProgramCommandLine makeProgramCommandLine() throws RunBuildException {
 
     final String message = getRunnerParameters().get(EchoRunnerConstants.MESSAGE_KEY);
+    final String iq_server = getRunnerParameters().get(EchoRunnerConstants.IQ_SERVER_KEY);
+    final String username = getRunnerParameters().get(EchoRunnerConstants.IQ_USERNAME_KEY);
+    final String password = getRunnerParameters().get(EchoRunnerConstants.IQ_PASSWORD_KEY);
+    final String applicationid = getRunnerParameters().get(EchoRunnerConstants.IQ_APPLICATIONID_KEY);
+    final String stage = getRunnerParameters().get(EchoRunnerConstants.IQ_STAGE_KEY);
+    final String scantarget = getRunnerParameters().get(EchoRunnerConstants.IQ_SCANTARGET_KEY);
 
-    final String scriptContent = "/bin/echo " + message + " | tee echo.txt";
+
+
+
+//    final String scriptContent = "echo " + message + " > echo.txt";
+    final String scriptContent = String.format("java -jar C:\\Cameron\\Software\\nexus-iq-server-1.114.0-01-bundle\\nexus-iq-cli-1.114.0-01.jar -s %s -a %s:%s -i %s -r echo.txt %s", iq_server, username, password, applicationid, scantarget);
 
     final String script = getCustomScript(scriptContent);
 
@@ -34,7 +44,7 @@ public class EchoService extends BuildServiceAdapter {
 
   String getCustomScript(String scriptContent) throws RunBuildException {
     try {
-      final File scriptFile = File.createTempFile("custom_script", ".sh", getAgentTempDirectory());
+      final File scriptFile = File.createTempFile("custom_script", ".bat", getAgentTempDirectory());
       FileUtil.writeFileAndReportErrors(scriptFile, scriptContent);
       myFilesToDelete.add(scriptFile);
       return scriptFile.getAbsolutePath();
@@ -48,7 +58,8 @@ public class EchoService extends BuildServiceAdapter {
 
   private void setExecutableAttribute(@NotNull final String script) throws RunBuildException {
     try {
-      TCStreamUtil.setFileMode(new File(script), "a+x");
+      return;
+//      TCStreamUtil.setFileMode(new File(script), "a+x");
     } catch (Throwable t) {
       throw new RunBuildException("Failed to set executable attribute for custom script '" + script + "'", t);
     }

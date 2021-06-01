@@ -16,7 +16,7 @@ import java.util.Map;
 
 public class EchoReport extends BuildTab {
   protected EchoReport(WebControllerManager manager, BuildsManager buildManager, PluginDescriptor descriptor) {
-    super("echoReportTab", "Echo Report", manager, buildManager,
+    super("echoReportTab", "Sonatype Report", manager, buildManager,
     descriptor.getPluginResourcesPath("echoReport.jsp"));
   }
 
@@ -29,6 +29,19 @@ public class EchoReport extends BuildTab {
       try {
         final String text = StreamUtil.readText(artifact.getArtifact().getInputStream());
         model.put("text", text);
+        model.put("componentCount", "79");
+
+        //now parse the text file
+        //*********************************************************************************************
+        //Policy Action: None
+        //Stage: build
+        //[INFO] Number of components affected: 4 critical, 6 severe, 1 moderate
+        // [INFO] Number of open policy violations: 4 critical, 26 severe, 1 moderate
+        // [INFO] Number of grandfathered policy violations: 0
+        // [INFO] Number of components: 79
+        // [INFO] The detailed report can be viewed online at http://iq-server:8070/ui/links/application/petclinic/report/41554b35d0964c1c8926d73e5cd8092a
+        // [INFO] *********************************************************************************************
+
       } catch (IOException e) {
         e.printStackTrace();
       }

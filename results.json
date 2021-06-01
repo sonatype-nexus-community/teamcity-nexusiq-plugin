@@ -1,0 +1,3735 @@
+{
+  "applicationId" : "petclinic",
+  "scanId" : "e389c69b79ae401996db0173cc91484e",
+  "reportHtmlUrl" : "http://iq-server:8070/ui/links/application/petclinic/report/e389c69b79ae401996db0173cc91484e",
+  "reportPdfUrl" : "http://iq-server:8070/ui/links/application/petclinic/report/e389c69b79ae401996db0173cc91484e/pdf",
+  "reportDataUrl" : "http://iq-server:8070/api/v2/applications/petclinic/reports/e389c69b79ae401996db0173cc91484e/raw",
+  "policyAction" : "None",
+  "policyEvaluationResult" : {
+    "alerts" : [ {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "b56188d1e60e47a6beccb64b977d94a1",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "tomcat-embed-websocket",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.apache.tomcat.embed",
+              "version" : "9.0.45"
+            }
+          },
+          "hash" : "05cefd0aab62e2938f51",
+          "constraintFacts" : [ {
+            "constraintId" : "611b1b38955e44199731c393ddabf67c",
+            "constraintName" : "Version is unpopular",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "RelativePopularity",
+              "conditionIndex" : 0,
+              "summary" : "Relative Popularity (Percentage) <= 10",
+              "reason" : "Relative popularity was <= 10% (relative popularity = 0%)",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.apache.tomcat.embed"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "tomcat-embed-websocket"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "9.0.45"
+            } ],
+            "name" : "tomcat-embed-websocket"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "ac50b030f0fc489abc61f84ae230223d",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "bootstrap",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.webjars",
+              "version" : "3.3.6"
+            }
+          },
+          "hash" : "1360e2bcd3016ce44a27",
+          "constraintFacts" : [ {
+            "constraintId" : "6c330d5c0a584d969e25c05371fdb3fc",
+            "constraintName" : "Version is old",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "AgeInDays",
+              "conditionIndex" : 0,
+              "summary" : "Age older than 1825 days",
+              "reason" : "Found component older than 5 years",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.webjars"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "bootstrap"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "3.3.6"
+            } ],
+            "name" : "bootstrap"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "b0b9fb6aa3534db18ad3f6be4ec5d74e",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "txw2",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.glassfish.jaxb",
+              "version" : "2.3.4"
+            }
+          },
+          "hash" : "257fa649d3137a1060d2",
+          "constraintFacts" : [ {
+            "constraintId" : "611b1b38955e44199731c393ddabf67c",
+            "constraintName" : "Version is unpopular",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "RelativePopularity",
+              "conditionIndex" : 0,
+              "summary" : "Relative Popularity (Percentage) <= 10",
+              "reason" : "Relative popularity was <= 10% (relative popularity = 0%)",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.glassfish.jaxb"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "txw2"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "2.3.4"
+            } ],
+            "name" : "txw2"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "5cfc1726fa8e4b84b554f3ef588413a1",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "spring-boot-autoconfigure",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.springframework.boot",
+              "version" : "2.4.5"
+            }
+          },
+          "hash" : "32887531b5a125d4840a",
+          "constraintFacts" : [ {
+            "constraintId" : "611b1b38955e44199731c393ddabf67c",
+            "constraintName" : "Version is unpopular",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "RelativePopularity",
+              "conditionIndex" : 0,
+              "summary" : "Relative Popularity (Percentage) <= 10",
+              "reason" : "Relative popularity was <= 10% (relative popularity = 0%)",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.springframework.boot"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "spring-boot-autoconfigure"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "2.4.5"
+            } ],
+            "name" : "spring-boot-autoconfigure"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "b25f915b61aa44288769b41b56b4adc7",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "spring-expression",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.springframework",
+              "version" : "5.3.6"
+            }
+          },
+          "hash" : "33ba1d8dfaab0fd60ce4",
+          "constraintFacts" : [ {
+            "constraintId" : "611b1b38955e44199731c393ddabf67c",
+            "constraintName" : "Version is unpopular",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "RelativePopularity",
+              "conditionIndex" : 0,
+              "summary" : "Relative Popularity (Percentage) <= 10",
+              "reason" : "Relative popularity was <= 10% (relative popularity = 0%)",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.springframework"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "spring-expression"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "5.3.6"
+            } ],
+            "name" : "spring-expression"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "2df30b7eb2b347f5aaabc23773bbfa98",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "spring-data-jpa",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.springframework.data",
+              "version" : "2.4.8"
+            }
+          },
+          "hash" : "3b828cf72c68f3affc75",
+          "constraintFacts" : [ {
+            "constraintId" : "611b1b38955e44199731c393ddabf67c",
+            "constraintName" : "Version is unpopular",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "RelativePopularity",
+              "conditionIndex" : 0,
+              "summary" : "Relative Popularity (Percentage) <= 10",
+              "reason" : "Relative popularity was <= 10% (relative popularity = 0%)",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.springframework.data"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "spring-data-jpa"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "2.4.8"
+            } ],
+            "name" : "spring-data-jpa"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "5465e86eb84b470f8890b2a6acd94f7b",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "a-name",
+            "coordinates" : {
+              "name" : "org.webjars bootstrap",
+              "qualifier" : "",
+              "version" : "3.3.6"
+            }
+          },
+          "hash" : "3df7f26b3d0b59820b2a",
+          "constraintFacts" : [ {
+            "constraintId" : "6c330d5c0a584d969e25c05371fdb3fc",
+            "constraintName" : "Version is old",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "AgeInDays",
+              "conditionIndex" : 0,
+              "summary" : "Age older than 1825 days",
+              "reason" : "Found component older than 5 years",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Name",
+              "value" : "org.webjars bootstrap"
+            }, {
+              "value" : " "
+            }, {
+              "field" : "Version",
+              "value" : "3.3.6"
+            } ],
+            "name" : "org.webjars bootstrap"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "fddcbc02fe414c05a79325e4ffeef069",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "spring-aop",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.springframework",
+              "version" : "5.3.6"
+            }
+          },
+          "hash" : "510d9afcfce1fa9a2086",
+          "constraintFacts" : [ {
+            "constraintId" : "611b1b38955e44199731c393ddabf67c",
+            "constraintName" : "Version is unpopular",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "RelativePopularity",
+              "conditionIndex" : 0,
+              "summary" : "Relative Popularity (Percentage) <= 10",
+              "reason" : "Relative popularity was <= 10% (relative popularity = 0%)",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.springframework"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "spring-aop"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "5.3.6"
+            } ],
+            "name" : "spring-aop"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "87daf19724364289879629724d1bb328",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "spring-jcl",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.springframework",
+              "version" : "5.3.6"
+            }
+          },
+          "hash" : "53ddfc5cfdf438a1d334",
+          "constraintFacts" : [ {
+            "constraintId" : "611b1b38955e44199731c393ddabf67c",
+            "constraintName" : "Version is unpopular",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "RelativePopularity",
+              "conditionIndex" : 0,
+              "summary" : "Relative Popularity (Percentage) <= 10",
+              "reason" : "Relative popularity was <= 10% (relative popularity = 0%)",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.springframework"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "spring-jcl"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "5.3.6"
+            } ],
+            "name" : "spring-jcl"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "613211b4d8e34758944cfbca386a376d",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "jaxb-runtime",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.glassfish.jaxb",
+              "version" : "2.3.4"
+            }
+          },
+          "hash" : "5f3828d3a345ff3d8acb",
+          "constraintFacts" : [ {
+            "constraintId" : "611b1b38955e44199731c393ddabf67c",
+            "constraintName" : "Version is unpopular",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "RelativePopularity",
+              "conditionIndex" : 0,
+              "summary" : "Relative Popularity (Percentage) <= 10",
+              "reason" : "Relative popularity was <= 10% (relative popularity = 0%)",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.glassfish.jaxb"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "jaxb-runtime"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "2.3.4"
+            } ],
+            "name" : "jaxb-runtime"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "a8412bbf9af54337b72e9d8214b8ada9",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "spring-aspects",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.springframework",
+              "version" : "5.3.6"
+            }
+          },
+          "hash" : "69b5017aa748f6832798",
+          "constraintFacts" : [ {
+            "constraintId" : "611b1b38955e44199731c393ddabf67c",
+            "constraintName" : "Version is unpopular",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "RelativePopularity",
+              "conditionIndex" : 0,
+              "summary" : "Relative Popularity (Percentage) <= 10",
+              "reason" : "Relative popularity was <= 10% (relative popularity = 0%)",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.springframework"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "spring-aspects"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "5.3.6"
+            } ],
+            "name" : "spring-aspects"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "19a2cc5a7e5f425b98c7348fc4a24631",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "jquery-ui",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.webjars",
+              "version" : "1.11.4"
+            }
+          },
+          "hash" : "6cfa91035974bf658079",
+          "constraintFacts" : [ {
+            "constraintId" : "6c330d5c0a584d969e25c05371fdb3fc",
+            "constraintName" : "Version is old",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "AgeInDays",
+              "conditionIndex" : 0,
+              "summary" : "Age older than 1825 days",
+              "reason" : "Found component older than 5 years",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.webjars"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "jquery-ui"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "1.11.4"
+            } ],
+            "name" : "jquery-ui"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "5af4234a72624f9988496a635373fbc6",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "spring-data-commons",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.springframework.data",
+              "version" : "2.4.8"
+            }
+          },
+          "hash" : "6e57826833103244bd9c",
+          "constraintFacts" : [ {
+            "constraintId" : "611b1b38955e44199731c393ddabf67c",
+            "constraintName" : "Version is unpopular",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "RelativePopularity",
+              "conditionIndex" : 0,
+              "summary" : "Relative Popularity (Percentage) <= 10",
+              "reason" : "Relative popularity was <= 10% (relative popularity = 0%)",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.springframework.data"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "spring-data-commons"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "2.4.8"
+            } ],
+            "name" : "spring-data-commons"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "5959a9ffc9db45118347609c6378a561",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "LatencyUtils",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.latencyutils",
+              "version" : "2.0.3"
+            }
+          },
+          "hash" : "769c0b82cb2421c82563",
+          "constraintFacts" : [ {
+            "constraintId" : "6c330d5c0a584d969e25c05371fdb3fc",
+            "constraintName" : "Version is old",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "AgeInDays",
+              "conditionIndex" : 0,
+              "summary" : "Age older than 1825 days",
+              "reason" : "Found component older than 5 years",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.latencyutils"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "LatencyUtils"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "2.0.3"
+            } ],
+            "name" : "LatencyUtils"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "2ef4bdc2c08941a28abefb1e2fd08c98",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "spring-boot-actuator",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.springframework.boot",
+              "version" : "2.4.5"
+            }
+          },
+          "hash" : "76d239cda9b9256ad955",
+          "constraintFacts" : [ {
+            "constraintId" : "611b1b38955e44199731c393ddabf67c",
+            "constraintName" : "Version is unpopular",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "RelativePopularity",
+              "conditionIndex" : 0,
+              "summary" : "Relative Popularity (Percentage) <= 10",
+              "reason" : "Relative popularity was <= 10% (relative popularity = 0%)",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.springframework.boot"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "spring-boot-actuator"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "2.4.5"
+            } ],
+            "name" : "spring-boot-actuator"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "d9a1c317b65a41d0a2e6f464738447ff",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "spring-orm",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.springframework",
+              "version" : "5.3.6"
+            }
+          },
+          "hash" : "804d2fe2df5c2aee3b26",
+          "constraintFacts" : [ {
+            "constraintId" : "611b1b38955e44199731c393ddabf67c",
+            "constraintName" : "Version is unpopular",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "RelativePopularity",
+              "conditionIndex" : 0,
+              "summary" : "Relative Popularity (Percentage) <= 10",
+              "reason" : "Relative popularity was <= 10% (relative popularity = 0%)",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.springframework"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "spring-orm"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "5.3.6"
+            } ],
+            "name" : "spring-orm"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "945d674931f3474d8b23805283d28e56",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "antlr",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "antlr",
+              "version" : "2.7.7"
+            }
+          },
+          "hash" : "83cd2cd674a217ade95a",
+          "constraintFacts" : [ {
+            "constraintId" : "6c330d5c0a584d969e25c05371fdb3fc",
+            "constraintName" : "Version is old",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "AgeInDays",
+              "conditionIndex" : 0,
+              "summary" : "Age older than 1825 days",
+              "reason" : "Found component older than 5 years",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "antlr"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "antlr"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "2.7.7"
+            } ],
+            "name" : "antlr"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "a9f171ce475a4e1d96994242bbe7da5e",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "spring-context-support",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.springframework",
+              "version" : "5.3.6"
+            }
+          },
+          "hash" : "8d1a86779ff49218896c",
+          "constraintFacts" : [ {
+            "constraintId" : "611b1b38955e44199731c393ddabf67c",
+            "constraintName" : "Version is unpopular",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "RelativePopularity",
+              "conditionIndex" : 0,
+              "summary" : "Relative Popularity (Percentage) <= 10",
+              "reason" : "Relative popularity was <= 10% (relative popularity = 0%)",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.springframework"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "spring-context-support"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "5.3.6"
+            } ],
+            "name" : "spring-context-support"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "83807828e15143bc8c4fcb6d11b55a9b",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "spring-core",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.springframework",
+              "version" : "5.3.6"
+            }
+          },
+          "hash" : "8f91f60f628075701fde",
+          "constraintFacts" : [ {
+            "constraintId" : "611b1b38955e44199731c393ddabf67c",
+            "constraintName" : "Version is unpopular",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "RelativePopularity",
+              "conditionIndex" : 0,
+              "summary" : "Relative Popularity (Percentage) <= 10",
+              "reason" : "Relative popularity was <= 10% (relative popularity = 0%)",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.springframework"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "spring-core"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "5.3.6"
+            } ],
+            "name" : "spring-core"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "814d1dbf05f443fc93b0f5812523a06f",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "tomcat-embed-core",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.apache.tomcat.embed",
+              "version" : "9.0.45"
+            }
+          },
+          "hash" : "8fb7d78b14e2deb8fec4",
+          "constraintFacts" : [ {
+            "constraintId" : "611b1b38955e44199731c393ddabf67c",
+            "constraintName" : "Version is unpopular",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "RelativePopularity",
+              "conditionIndex" : 0,
+              "summary" : "Relative Popularity (Percentage) <= 10",
+              "reason" : "Relative popularity was <= 10% (relative popularity = 0%)",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.apache.tomcat.embed"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "tomcat-embed-core"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "9.0.45"
+            } ],
+            "name" : "tomcat-embed-core"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "6d669e64e569456b9f0f52c56fb9f01a",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "spring-jdbc",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.springframework",
+              "version" : "5.3.6"
+            }
+          },
+          "hash" : "986092dcd187de4d3dbf",
+          "constraintFacts" : [ {
+            "constraintId" : "611b1b38955e44199731c393ddabf67c",
+            "constraintName" : "Version is unpopular",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "RelativePopularity",
+              "conditionIndex" : 0,
+              "summary" : "Relative Popularity (Percentage) <= 10",
+              "reason" : "Relative popularity was <= 10% (relative popularity = 0%)",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.springframework"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "spring-jdbc"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "5.3.6"
+            } ],
+            "name" : "spring-jdbc"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "0d83f9bb242e4b938c41b93620042a40",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "spring-beans",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.springframework",
+              "version" : "5.3.6"
+            }
+          },
+          "hash" : "99cc944fb3454410b47f",
+          "constraintFacts" : [ {
+            "constraintId" : "611b1b38955e44199731c393ddabf67c",
+            "constraintName" : "Version is unpopular",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "RelativePopularity",
+              "conditionIndex" : 0,
+              "summary" : "Relative Popularity (Percentage) <= 10",
+              "reason" : "Relative popularity was <= 10% (relative popularity = 0%)",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.springframework"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "spring-beans"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "5.3.6"
+            } ],
+            "name" : "spring-beans"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "22266964b00b49c1b9308d3bf2366990",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "micrometer-core",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "io.micrometer",
+              "version" : "1.6.6"
+            }
+          },
+          "hash" : "a1a59fd63a31c0f89e62",
+          "constraintFacts" : [ {
+            "constraintId" : "611b1b38955e44199731c393ddabf67c",
+            "constraintName" : "Version is unpopular",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "RelativePopularity",
+              "conditionIndex" : 0,
+              "summary" : "Relative Popularity (Percentage) <= 10",
+              "reason" : "Relative popularity was <= 10% (relative popularity = 0%)",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "io.micrometer"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "micrometer-core"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "1.6.6"
+            } ],
+            "name" : "micrometer-core"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "7932435bf29e4a369055f475c3e300f3",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "spring-webmvc",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.springframework",
+              "version" : "5.3.6"
+            }
+          },
+          "hash" : "a9bff0c28f90c73b0443",
+          "constraintFacts" : [ {
+            "constraintId" : "611b1b38955e44199731c393ddabf67c",
+            "constraintName" : "Version is unpopular",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "RelativePopularity",
+              "conditionIndex" : 0,
+              "summary" : "Relative Popularity (Percentage) <= 10",
+              "reason" : "Relative popularity was <= 10% (relative popularity = 0%)",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.springframework"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "spring-webmvc"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "5.3.6"
+            } ],
+            "name" : "spring-webmvc"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "b1083deddc1e4e1da679bbf75185f2eb",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "ehcache",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.ehcache",
+              "version" : "3.9.2"
+            }
+          },
+          "hash" : "aea012176b0892986a43",
+          "constraintFacts" : [ {
+            "constraintId" : "611b1b38955e44199731c393ddabf67c",
+            "constraintName" : "Version is unpopular",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "RelativePopularity",
+              "conditionIndex" : 0,
+              "summary" : "Relative Popularity (Percentage) <= 10",
+              "reason" : "Relative popularity was <= 10% (relative popularity = 7%)",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.ehcache"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "ehcache"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "3.9.2"
+            } ],
+            "name" : "ehcache"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "d32ac116d2ec413b8e9dd0661c8e1ba1",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "jquery",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.webjars",
+              "version" : "2.2.4"
+            }
+          },
+          "hash" : "c3dc40b1b5f24c56afa3",
+          "constraintFacts" : [ {
+            "constraintId" : "6c330d5c0a584d969e25c05371fdb3fc",
+            "constraintName" : "Version is old",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "AgeInDays",
+              "conditionIndex" : 0,
+              "summary" : "Age older than 1825 days",
+              "reason" : "Found component older than 5 years",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.webjars"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "jquery"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "2.2.4"
+            } ],
+            "name" : "jquery"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "07911911ada24bb492ed1593bf39659d",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "spring-tx",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.springframework",
+              "version" : "5.3.6"
+            }
+          },
+          "hash" : "c428fe675aca705e6f8b",
+          "constraintFacts" : [ {
+            "constraintId" : "611b1b38955e44199731c393ddabf67c",
+            "constraintName" : "Version is unpopular",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "RelativePopularity",
+              "conditionIndex" : 0,
+              "summary" : "Relative Popularity (Percentage) <= 10",
+              "reason" : "Relative popularity was <= 10% (relative popularity = 0%)",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.springframework"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "spring-tx"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "5.3.6"
+            } ],
+            "name" : "spring-tx"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "d485206e5d2f4f3b970d78ae106ee0a5",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "istack-commons-runtime",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "com.sun.istack",
+              "version" : "3.0.12"
+            }
+          },
+          "hash" : "cbbe1a62b0cc6c85972e",
+          "constraintFacts" : [ {
+            "constraintId" : "611b1b38955e44199731c393ddabf67c",
+            "constraintName" : "Version is unpopular",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "RelativePopularity",
+              "conditionIndex" : 0,
+              "summary" : "Relative Popularity (Percentage) <= 10",
+              "reason" : "Relative popularity was <= 10% (relative popularity = 0%)",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "com.sun.istack"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "istack-commons-runtime"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "3.0.12"
+            } ],
+            "name" : "istack-commons-runtime"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "d39326bd8e1148c5b5d4a8693b10c7e2",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "hibernate-core",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.hibernate",
+              "version" : "5.4.30.Final"
+            }
+          },
+          "hash" : "cc01edcad99375a595ab",
+          "constraintFacts" : [ {
+            "constraintId" : "611b1b38955e44199731c393ddabf67c",
+            "constraintName" : "Version is unpopular",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "RelativePopularity",
+              "conditionIndex" : 0,
+              "summary" : "Relative Popularity (Percentage) <= 10",
+              "reason" : "Relative popularity was <= 10% (relative popularity = 5%)",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.hibernate"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "hibernate-core"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "5.4.30.Final"
+            } ],
+            "name" : "hibernate-core"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "89748d32f944418d8900e84e1d39cd51",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "a-name",
+            "coordinates" : {
+              "name" : "jquery",
+              "qualifier" : "",
+              "version" : "2.2.4"
+            }
+          },
+          "hash" : "d8a50d2ab5679e4b8a25",
+          "constraintFacts" : [ {
+            "constraintId" : "6c330d5c0a584d969e25c05371fdb3fc",
+            "constraintName" : "Version is old",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "AgeInDays",
+              "conditionIndex" : 0,
+              "summary" : "Age older than 1825 days",
+              "reason" : "Found component older than 5 years",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Name",
+              "value" : "jquery"
+            }, {
+              "value" : " "
+            }, {
+              "field" : "Version",
+              "value" : "2.2.4"
+            } ],
+            "name" : "jquery"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "99743654d607477ea07159bd68959e56",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "spring-context",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.springframework",
+              "version" : "5.3.6"
+            }
+          },
+          "hash" : "d99d3931528309a4ff49",
+          "constraintFacts" : [ {
+            "constraintId" : "611b1b38955e44199731c393ddabf67c",
+            "constraintName" : "Version is unpopular",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "RelativePopularity",
+              "conditionIndex" : 0,
+              "summary" : "Relative Popularity (Percentage) <= 10",
+              "reason" : "Relative popularity was <= 10% (relative popularity = 0%)",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.springframework"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "spring-context"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "5.3.6"
+            } ],
+            "name" : "spring-context"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "0dcbf02877934f99bdb6ae99308d2cd7",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "spring-boot",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.springframework.boot",
+              "version" : "2.4.5"
+            }
+          },
+          "hash" : "d9b82470df2e9549e448",
+          "constraintFacts" : [ {
+            "constraintId" : "611b1b38955e44199731c393ddabf67c",
+            "constraintName" : "Version is unpopular",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "RelativePopularity",
+              "conditionIndex" : 0,
+              "summary" : "Relative Popularity (Percentage) <= 10",
+              "reason" : "Relative popularity was <= 10% (relative popularity = 0%)",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.springframework.boot"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "spring-boot"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "2.4.5"
+            } ],
+            "name" : "spring-boot"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "289111f834944735b1c3f5018f5909a1",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "spring-boot-jarmode-layertools",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.springframework.boot",
+              "version" : "2.4.5"
+            }
+          },
+          "hash" : "e959d8816a4c02809b98",
+          "constraintFacts" : [ {
+            "constraintId" : "611b1b38955e44199731c393ddabf67c",
+            "constraintName" : "Version is unpopular",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "RelativePopularity",
+              "conditionIndex" : 0,
+              "summary" : "Relative Popularity (Percentage) <= 10",
+              "reason" : "Relative popularity was <= 10% (relative popularity = 0%)",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.springframework.boot"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "spring-boot-jarmode-layertools"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "2.4.5"
+            } ],
+            "name" : "spring-boot-jarmode-layertools"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "6986106242b6457ead9f42b2a5a79bea",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "spring-boot-actuator-autoconfigure",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.springframework.boot",
+              "version" : "2.4.5"
+            }
+          },
+          "hash" : "f7f217f6b892dad6316a",
+          "constraintFacts" : [ {
+            "constraintId" : "611b1b38955e44199731c393ddabf67c",
+            "constraintName" : "Version is unpopular",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "RelativePopularity",
+              "conditionIndex" : 0,
+              "summary" : "Relative Popularity (Percentage) <= 10",
+              "reason" : "Relative popularity was <= 10% (relative popularity = 0%)",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.springframework.boot"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "spring-boot-actuator-autoconfigure"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "2.4.5"
+            } ],
+            "name" : "spring-boot-actuator-autoconfigure"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "a8d843310f944f508ec18442a752c057",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "spring-web",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.springframework",
+              "version" : "5.3.6"
+            }
+          },
+          "hash" : "f9290db7324194921c23",
+          "constraintFacts" : [ {
+            "constraintId" : "611b1b38955e44199731c393ddabf67c",
+            "constraintName" : "Version is unpopular",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "RelativePopularity",
+              "conditionIndex" : 0,
+              "summary" : "Relative Popularity (Percentage) <= 10",
+              "reason" : "Relative popularity was <= 10% (relative popularity = 0%)",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.springframework"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "spring-web"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "5.3.6"
+            } ],
+            "name" : "spring-web"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "17bf262a9b214ad9a5604372a2c78caa",
+        "policyName" : "Architecture-Quality",
+        "threatLevel" : 1,
+        "policyViolationId" : "465f4707976145119b4568e8158aca81",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "a-name",
+            "coordinates" : {
+              "name" : "bootstrap",
+              "qualifier" : "",
+              "version" : "3.3.6"
+            }
+          },
+          "hash" : "fe6c9a5085b13363ecbc",
+          "constraintFacts" : [ {
+            "constraintId" : "6c330d5c0a584d969e25c05371fdb3fc",
+            "constraintName" : "Version is old",
+            "operatorName" : "OR",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "AgeInDays",
+              "conditionIndex" : 0,
+              "summary" : "Age older than 1825 days",
+              "reason" : "Found component older than 5 years",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Name",
+              "value" : "bootstrap"
+            }, {
+              "value" : " "
+            }, {
+              "field" : "Version",
+              "value" : "3.3.6"
+            } ],
+            "name" : "bootstrap"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "2bfbf7ab5ffb4524a953cb3f9a4bce67",
+        "policyName" : "Component-Similar",
+        "threatLevel" : 7,
+        "policyViolationId" : "c835b1b21a7d4b9389d2766b350e0eab",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "spring-boot-jarmode-layertools",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.springframework.boot",
+              "version" : "2.4.5"
+            }
+          },
+          "hash" : "e959d8816a4c02809b98",
+          "constraintFacts" : [ {
+            "constraintId" : "b14580730a124b2292c3c53708aecee8",
+            "constraintName" : "Unknown modification to component",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "MatchState",
+              "conditionIndex" : 0,
+              "summary" : "Match State is similar",
+              "reason" : "Match state was 'Similar'",
+              "reference" : null,
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "Coordinates",
+              "conditionIndex" : 0,
+              "summary" : "Coordinates do not match maven:org.eclipse.*:*:*:*:*",
+              "reason" : "Coordinates were org.springframework.boot : spring-boot-jarmode-layertools : 2.4.5 (do not match org.eclipse.* : * : * : * : *)",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.springframework.boot"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "spring-boot-jarmode-layertools"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "2.4.5"
+            } ],
+            "name" : "spring-boot-jarmode-layertools"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "4038c5a035ac425badd2bd6aa8b085f9",
+        "policyName" : "Component-Unknown",
+        "threatLevel" : 2,
+        "policyViolationId" : "608263d9b002467db5deee75c71ff9ae",
+        "componentFacts" : [ {
+          "componentIdentifier" : null,
+          "hash" : "28ebe1d36d181b7bc419",
+          "constraintFacts" : [ {
+            "constraintId" : "5bf28c777e704aec95fd337678f0575f",
+            "constraintName" : "Unknown 3rd party component",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "MatchState",
+              "conditionIndex" : 0,
+              "summary" : "Match State is unknown",
+              "reason" : "Match state was 'Unknown'",
+              "reference" : null,
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "Proprietary",
+              "conditionIndex" : 0,
+              "summary" : "Proprietary is false",
+              "reason" : "Component does not contain proprietary packages",
+              "reference" : null,
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "DataSource",
+              "conditionIndex" : 0,
+              "summary" : "Data Source has support for identity",
+              "reason" : "Data Source has support for Identity",
+              "reference" : null,
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : null
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "520e3e72bd204556afcc2cd255e11317",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "5d6e87625aab44feb0719464101f8d28",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "bootstrap",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.webjars",
+              "version" : "3.3.6"
+            }
+          },
+          "hash" : "1360e2bcd3016ce44a27",
+          "constraintFacts" : [ {
+            "constraintId" : "e309dda31e464693b18e2470b73a9a40",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability CVE-2018-14042 with severity >= 4 (severity = 6.1)",
+              "reference" : {
+                "value" : "CVE-2018-14042",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability CVE-2018-14042 with severity < 7 (severity = 6.1)",
+              "reference" : {
+                "value" : "CVE-2018-14042",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.webjars"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "bootstrap"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "3.3.6"
+            } ],
+            "name" : "bootstrap"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "520e3e72bd204556afcc2cd255e11317",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "c2fe2338126e4602a2103dafe474e392",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "bootstrap",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.webjars",
+              "version" : "3.3.6"
+            }
+          },
+          "hash" : "1360e2bcd3016ce44a27",
+          "constraintFacts" : [ {
+            "constraintId" : "e309dda31e464693b18e2470b73a9a40",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability CVE-2018-20677 with severity >= 4 (severity = 6.1)",
+              "reference" : {
+                "value" : "CVE-2018-20677",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability CVE-2018-20677 with severity < 7 (severity = 6.1)",
+              "reference" : {
+                "value" : "CVE-2018-20677",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.webjars"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "bootstrap"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "3.3.6"
+            } ],
+            "name" : "bootstrap"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "520e3e72bd204556afcc2cd255e11317",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "5a2f4707a578456983766bec12c5bf27",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "bootstrap",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.webjars",
+              "version" : "3.3.6"
+            }
+          },
+          "hash" : "1360e2bcd3016ce44a27",
+          "constraintFacts" : [ {
+            "constraintId" : "e309dda31e464693b18e2470b73a9a40",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability CVE-2019-8331 with severity >= 4 (severity = 6.1)",
+              "reference" : {
+                "value" : "CVE-2019-8331",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability CVE-2019-8331 with severity < 7 (severity = 6.1)",
+              "reference" : {
+                "value" : "CVE-2019-8331",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.webjars"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "bootstrap"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "3.3.6"
+            } ],
+            "name" : "bootstrap"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "520e3e72bd204556afcc2cd255e11317",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "43be708d7a6c4a64859ff6a79f9b132b",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "bootstrap",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.webjars",
+              "version" : "3.3.6"
+            }
+          },
+          "hash" : "1360e2bcd3016ce44a27",
+          "constraintFacts" : [ {
+            "constraintId" : "e309dda31e464693b18e2470b73a9a40",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability sonatype-2016-0129 with severity >= 4 (severity = 5.4)",
+              "reference" : {
+                "value" : "sonatype-2016-0129",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability sonatype-2016-0129 with severity < 7 (severity = 5.4)",
+              "reference" : {
+                "value" : "sonatype-2016-0129",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.webjars"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "bootstrap"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "3.3.6"
+            } ],
+            "name" : "bootstrap"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "520e3e72bd204556afcc2cd255e11317",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "1122dab8c57a4d099aa604f8b091b94a",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "bootstrap",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.webjars",
+              "version" : "3.3.6"
+            }
+          },
+          "hash" : "1360e2bcd3016ce44a27",
+          "constraintFacts" : [ {
+            "constraintId" : "e309dda31e464693b18e2470b73a9a40",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability sonatype-2017-0695 with severity >= 4 (severity = 6.1)",
+              "reference" : {
+                "value" : "sonatype-2017-0695",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability sonatype-2017-0695 with severity < 7 (severity = 6.1)",
+              "reference" : {
+                "value" : "sonatype-2017-0695",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.webjars"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "bootstrap"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "3.3.6"
+            } ],
+            "name" : "bootstrap"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "520e3e72bd204556afcc2cd255e11317",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "9d45ec575643432ca7fbf2679a970c52",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "bootstrap",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.webjars",
+              "version" : "3.3.6"
+            }
+          },
+          "hash" : "1360e2bcd3016ce44a27",
+          "constraintFacts" : [ {
+            "constraintId" : "e309dda31e464693b18e2470b73a9a40",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability sonatype-2018-0607 with severity >= 4 (severity = 6.1)",
+              "reference" : {
+                "value" : "sonatype-2018-0607",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability sonatype-2018-0607 with severity < 7 (severity = 6.1)",
+              "reference" : {
+                "value" : "sonatype-2018-0607",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.webjars"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "bootstrap"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "3.3.6"
+            } ],
+            "name" : "bootstrap"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "520e3e72bd204556afcc2cd255e11317",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "d0454903471640dc90753f5372bf2801",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "a-name",
+            "coordinates" : {
+              "name" : "org.webjars bootstrap",
+              "qualifier" : "",
+              "version" : "3.3.6"
+            }
+          },
+          "hash" : "3df7f26b3d0b59820b2a",
+          "constraintFacts" : [ {
+            "constraintId" : "e309dda31e464693b18e2470b73a9a40",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability sonatype-2016-0129 with severity >= 4 (severity = 5.4)",
+              "reference" : {
+                "value" : "sonatype-2016-0129",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability sonatype-2016-0129 with severity < 7 (severity = 5.4)",
+              "reference" : {
+                "value" : "sonatype-2016-0129",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Name",
+              "value" : "org.webjars bootstrap"
+            }, {
+              "value" : " "
+            }, {
+              "field" : "Version",
+              "value" : "3.3.6"
+            } ],
+            "name" : "org.webjars bootstrap"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "520e3e72bd204556afcc2cd255e11317",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "3c2f36ebffd44f5aadf7ff9b45e1324a",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "a-name",
+            "coordinates" : {
+              "name" : "org.webjars bootstrap",
+              "qualifier" : "",
+              "version" : "3.3.6"
+            }
+          },
+          "hash" : "3df7f26b3d0b59820b2a",
+          "constraintFacts" : [ {
+            "constraintId" : "e309dda31e464693b18e2470b73a9a40",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability sonatype-2017-0695 with severity >= 4 (severity = 6.1)",
+              "reference" : {
+                "value" : "sonatype-2017-0695",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability sonatype-2017-0695 with severity < 7 (severity = 6.1)",
+              "reference" : {
+                "value" : "sonatype-2017-0695",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Name",
+              "value" : "org.webjars bootstrap"
+            }, {
+              "value" : " "
+            }, {
+              "field" : "Version",
+              "value" : "3.3.6"
+            } ],
+            "name" : "org.webjars bootstrap"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "520e3e72bd204556afcc2cd255e11317",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "1b7c3efd79ca4554a8d855bd9455e148",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "jquery-ui",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.webjars",
+              "version" : "1.11.4"
+            }
+          },
+          "hash" : "6cfa91035974bf658079",
+          "constraintFacts" : [ {
+            "constraintId" : "e309dda31e464693b18e2470b73a9a40",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability sonatype-2016-0052 with severity >= 4 (severity = 6.1)",
+              "reference" : {
+                "value" : "sonatype-2016-0052",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability sonatype-2016-0052 with severity < 7 (severity = 6.1)",
+              "reference" : {
+                "value" : "sonatype-2016-0052",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.webjars"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "jquery-ui"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "1.11.4"
+            } ],
+            "name" : "jquery-ui"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "520e3e72bd204556afcc2cd255e11317",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "fe7f715c3b3642a1bcb61089d482a57e",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "jquery",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.webjars",
+              "version" : "2.2.4"
+            }
+          },
+          "hash" : "c3dc40b1b5f24c56afa3",
+          "constraintFacts" : [ {
+            "constraintId" : "e309dda31e464693b18e2470b73a9a40",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability CVE-2020-11023 with severity >= 4 (severity = 6.1)",
+              "reference" : {
+                "value" : "CVE-2020-11023",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability CVE-2020-11023 with severity < 7 (severity = 6.1)",
+              "reference" : {
+                "value" : "CVE-2020-11023",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.webjars"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "jquery"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "2.2.4"
+            } ],
+            "name" : "jquery"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "520e3e72bd204556afcc2cd255e11317",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "1159c1a8efc840a681b0a8f42ae24e4d",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "jquery",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.webjars",
+              "version" : "2.2.4"
+            }
+          },
+          "hash" : "c3dc40b1b5f24c56afa3",
+          "constraintFacts" : [ {
+            "constraintId" : "e309dda31e464693b18e2470b73a9a40",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability sonatype-2014-0026 with severity >= 4 (severity = 6.5)",
+              "reference" : {
+                "value" : "sonatype-2014-0026",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability sonatype-2014-0026 with severity < 7 (severity = 6.5)",
+              "reference" : {
+                "value" : "sonatype-2014-0026",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.webjars"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "jquery"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "2.2.4"
+            } ],
+            "name" : "jquery"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "520e3e72bd204556afcc2cd255e11317",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "4e5a5165a4004600a93ff2748c926e69",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "jquery",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.webjars",
+              "version" : "2.2.4"
+            }
+          },
+          "hash" : "c3dc40b1b5f24c56afa3",
+          "constraintFacts" : [ {
+            "constraintId" : "e309dda31e464693b18e2470b73a9a40",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability sonatype-2016-0107 with severity >= 4 (severity = 6.1)",
+              "reference" : {
+                "value" : "sonatype-2016-0107",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability sonatype-2016-0107 with severity < 7 (severity = 6.1)",
+              "reference" : {
+                "value" : "sonatype-2016-0107",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.webjars"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "jquery"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "2.2.4"
+            } ],
+            "name" : "jquery"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "520e3e72bd204556afcc2cd255e11317",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "57d0f369c6af4d689fd65475f2c14053",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "jquery",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.webjars",
+              "version" : "2.2.4"
+            }
+          },
+          "hash" : "c3dc40b1b5f24c56afa3",
+          "constraintFacts" : [ {
+            "constraintId" : "e309dda31e464693b18e2470b73a9a40",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability sonatype-2020-0187 with severity >= 4 (severity = 6.1)",
+              "reference" : {
+                "value" : "sonatype-2020-0187",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability sonatype-2020-0187 with severity < 7 (severity = 6.1)",
+              "reference" : {
+                "value" : "sonatype-2020-0187",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.webjars"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "jquery"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "2.2.4"
+            } ],
+            "name" : "jquery"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "520e3e72bd204556afcc2cd255e11317",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "dc3a75e430604873bd83e360f46ab655",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "a-name",
+            "coordinates" : {
+              "name" : "jquery",
+              "qualifier" : "",
+              "version" : "2.2.4"
+            }
+          },
+          "hash" : "d8a50d2ab5679e4b8a25",
+          "constraintFacts" : [ {
+            "constraintId" : "e309dda31e464693b18e2470b73a9a40",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability CVE-2020-11023 with severity >= 4 (severity = 6.1)",
+              "reference" : {
+                "value" : "CVE-2020-11023",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability CVE-2020-11023 with severity < 7 (severity = 6.1)",
+              "reference" : {
+                "value" : "CVE-2020-11023",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Name",
+              "value" : "jquery"
+            }, {
+              "value" : " "
+            }, {
+              "field" : "Version",
+              "value" : "2.2.4"
+            } ],
+            "name" : "jquery"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "520e3e72bd204556afcc2cd255e11317",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "dc35ca155d50486a8074eb7ed4360bb5",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "a-name",
+            "coordinates" : {
+              "name" : "jquery",
+              "qualifier" : "",
+              "version" : "2.2.4"
+            }
+          },
+          "hash" : "d8a50d2ab5679e4b8a25",
+          "constraintFacts" : [ {
+            "constraintId" : "e309dda31e464693b18e2470b73a9a40",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability sonatype-2014-0026 with severity >= 4 (severity = 6.5)",
+              "reference" : {
+                "value" : "sonatype-2014-0026",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability sonatype-2014-0026 with severity < 7 (severity = 6.5)",
+              "reference" : {
+                "value" : "sonatype-2014-0026",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Name",
+              "value" : "jquery"
+            }, {
+              "value" : " "
+            }, {
+              "field" : "Version",
+              "value" : "2.2.4"
+            } ],
+            "name" : "jquery"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "520e3e72bd204556afcc2cd255e11317",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "53139114a79648dba2ce5554f9d9d40c",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "a-name",
+            "coordinates" : {
+              "name" : "jquery",
+              "qualifier" : "",
+              "version" : "2.2.4"
+            }
+          },
+          "hash" : "d8a50d2ab5679e4b8a25",
+          "constraintFacts" : [ {
+            "constraintId" : "e309dda31e464693b18e2470b73a9a40",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability sonatype-2016-0107 with severity >= 4 (severity = 6.1)",
+              "reference" : {
+                "value" : "sonatype-2016-0107",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability sonatype-2016-0107 with severity < 7 (severity = 6.1)",
+              "reference" : {
+                "value" : "sonatype-2016-0107",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Name",
+              "value" : "jquery"
+            }, {
+              "value" : " "
+            }, {
+              "field" : "Version",
+              "value" : "2.2.4"
+            } ],
+            "name" : "jquery"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "520e3e72bd204556afcc2cd255e11317",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "eca728ac6fd14b79ac9ff448e4d2a18c",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "a-name",
+            "coordinates" : {
+              "name" : "jquery",
+              "qualifier" : "",
+              "version" : "2.2.4"
+            }
+          },
+          "hash" : "d8a50d2ab5679e4b8a25",
+          "constraintFacts" : [ {
+            "constraintId" : "e309dda31e464693b18e2470b73a9a40",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability sonatype-2020-0187 with severity >= 4 (severity = 6.1)",
+              "reference" : {
+                "value" : "sonatype-2020-0187",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability sonatype-2020-0187 with severity < 7 (severity = 6.1)",
+              "reference" : {
+                "value" : "sonatype-2020-0187",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Name",
+              "value" : "jquery"
+            }, {
+              "value" : " "
+            }, {
+              "field" : "Version",
+              "value" : "2.2.4"
+            } ],
+            "name" : "jquery"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "520e3e72bd204556afcc2cd255e11317",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "122c12a22f364e038e2aab912f91a7ea",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "h2",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "com.h2database",
+              "version" : "1.4.200"
+            }
+          },
+          "hash" : "f7533fe7cb8e99c87a43",
+          "constraintFacts" : [ {
+            "constraintId" : "e309dda31e464693b18e2470b73a9a40",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability CVE-2018-14335 with severity >= 4 (severity = 6.5)",
+              "reference" : {
+                "value" : "CVE-2018-14335",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability CVE-2018-14335 with severity < 7 (severity = 6.5)",
+              "reference" : {
+                "value" : "CVE-2018-14335",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "com.h2database"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "h2"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "1.4.200"
+            } ],
+            "name" : "h2"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "520e3e72bd204556afcc2cd255e11317",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "849a3084af8646198cae0329d6ffef22",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "spring-web",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.springframework",
+              "version" : "5.3.6"
+            }
+          },
+          "hash" : "f9290db7324194921c23",
+          "constraintFacts" : [ {
+            "constraintId" : "e309dda31e464693b18e2470b73a9a40",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability CVE-2021-22118 with severity >= 4 (severity = 5.7)",
+              "reference" : {
+                "value" : "CVE-2021-22118",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability CVE-2021-22118 with severity < 7 (severity = 5.7)",
+              "reference" : {
+                "value" : "CVE-2021-22118",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.springframework"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "spring-web"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "5.3.6"
+            } ],
+            "name" : "spring-web"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "520e3e72bd204556afcc2cd255e11317",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "5764c9fc2972447aa26b9e964327997a",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "a-name",
+            "coordinates" : {
+              "name" : "bootstrap",
+              "qualifier" : "",
+              "version" : "3.3.6"
+            }
+          },
+          "hash" : "fe6c9a5085b13363ecbc",
+          "constraintFacts" : [ {
+            "constraintId" : "e309dda31e464693b18e2470b73a9a40",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability CVE-2018-14042 with severity >= 4 (severity = 6.1)",
+              "reference" : {
+                "value" : "CVE-2018-14042",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability CVE-2018-14042 with severity < 7 (severity = 6.1)",
+              "reference" : {
+                "value" : "CVE-2018-14042",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Name",
+              "value" : "bootstrap"
+            }, {
+              "value" : " "
+            }, {
+              "field" : "Version",
+              "value" : "3.3.6"
+            } ],
+            "name" : "bootstrap"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "520e3e72bd204556afcc2cd255e11317",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "a3e7db496c114fc1bb156eaf679d64da",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "a-name",
+            "coordinates" : {
+              "name" : "bootstrap",
+              "qualifier" : "",
+              "version" : "3.3.6"
+            }
+          },
+          "hash" : "fe6c9a5085b13363ecbc",
+          "constraintFacts" : [ {
+            "constraintId" : "e309dda31e464693b18e2470b73a9a40",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability CVE-2018-20677 with severity >= 4 (severity = 6.1)",
+              "reference" : {
+                "value" : "CVE-2018-20677",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability CVE-2018-20677 with severity < 7 (severity = 6.1)",
+              "reference" : {
+                "value" : "CVE-2018-20677",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Name",
+              "value" : "bootstrap"
+            }, {
+              "value" : " "
+            }, {
+              "field" : "Version",
+              "value" : "3.3.6"
+            } ],
+            "name" : "bootstrap"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "520e3e72bd204556afcc2cd255e11317",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "e5e4d98f5e454fa9a2408f172499196c",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "a-name",
+            "coordinates" : {
+              "name" : "bootstrap",
+              "qualifier" : "",
+              "version" : "3.3.6"
+            }
+          },
+          "hash" : "fe6c9a5085b13363ecbc",
+          "constraintFacts" : [ {
+            "constraintId" : "e309dda31e464693b18e2470b73a9a40",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability CVE-2019-8331 with severity >= 4 (severity = 6.1)",
+              "reference" : {
+                "value" : "CVE-2019-8331",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability CVE-2019-8331 with severity < 7 (severity = 6.1)",
+              "reference" : {
+                "value" : "CVE-2019-8331",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Name",
+              "value" : "bootstrap"
+            }, {
+              "value" : " "
+            }, {
+              "field" : "Version",
+              "value" : "3.3.6"
+            } ],
+            "name" : "bootstrap"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "520e3e72bd204556afcc2cd255e11317",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "a4ffd62088a445e189718f30ee1ecb92",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "a-name",
+            "coordinates" : {
+              "name" : "bootstrap",
+              "qualifier" : "",
+              "version" : "3.3.6"
+            }
+          },
+          "hash" : "fe6c9a5085b13363ecbc",
+          "constraintFacts" : [ {
+            "constraintId" : "e309dda31e464693b18e2470b73a9a40",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability sonatype-2016-0129 with severity >= 4 (severity = 5.4)",
+              "reference" : {
+                "value" : "sonatype-2016-0129",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability sonatype-2016-0129 with severity < 7 (severity = 5.4)",
+              "reference" : {
+                "value" : "sonatype-2016-0129",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Name",
+              "value" : "bootstrap"
+            }, {
+              "value" : " "
+            }, {
+              "field" : "Version",
+              "value" : "3.3.6"
+            } ],
+            "name" : "bootstrap"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "520e3e72bd204556afcc2cd255e11317",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "97d5ac1d453f41aca31d1372c1bf1122",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "a-name",
+            "coordinates" : {
+              "name" : "bootstrap",
+              "qualifier" : "",
+              "version" : "3.3.6"
+            }
+          },
+          "hash" : "fe6c9a5085b13363ecbc",
+          "constraintFacts" : [ {
+            "constraintId" : "e309dda31e464693b18e2470b73a9a40",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability sonatype-2017-0695 with severity >= 4 (severity = 6.1)",
+              "reference" : {
+                "value" : "sonatype-2017-0695",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability sonatype-2017-0695 with severity < 7 (severity = 6.1)",
+              "reference" : {
+                "value" : "sonatype-2017-0695",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Name",
+              "value" : "bootstrap"
+            }, {
+              "value" : " "
+            }, {
+              "field" : "Version",
+              "value" : "3.3.6"
+            } ],
+            "name" : "bootstrap"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "520e3e72bd204556afcc2cd255e11317",
+        "policyName" : "Security-Medium",
+        "threatLevel" : 7,
+        "policyViolationId" : "2ab87d53ee73415fb031def7dfb27956",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "a-name",
+            "coordinates" : {
+              "name" : "bootstrap",
+              "qualifier" : "",
+              "version" : "3.3.6"
+            }
+          },
+          "hash" : "fe6c9a5085b13363ecbc",
+          "constraintFacts" : [ {
+            "constraintId" : "e309dda31e464693b18e2470b73a9a40",
+            "constraintName" : "Medium risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 4",
+              "reason" : "Found security vulnerability sonatype-2018-0607 with severity >= 4 (severity = 6.1)",
+              "reference" : {
+                "value" : "sonatype-2018-0607",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 7",
+              "reason" : "Found security vulnerability sonatype-2018-0607 with severity < 7 (severity = 6.1)",
+              "reference" : {
+                "value" : "sonatype-2018-0607",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Name",
+              "value" : "bootstrap"
+            }, {
+              "value" : " "
+            }, {
+              "field" : "Version",
+              "value" : "3.3.6"
+            } ],
+            "name" : "bootstrap"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "5a319b2c53e44c988cfb423777ecb82b",
+        "policyName" : "Security-Critical",
+        "threatLevel" : 10,
+        "policyViolationId" : "b67a7baa8e654c278146ec086d05311d",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "jquery",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.webjars",
+              "version" : "2.2.4"
+            }
+          },
+          "hash" : "c3dc40b1b5f24c56afa3",
+          "constraintFacts" : [ {
+            "constraintId" : "2bb9b555d0254dd2a7248ffc5edfadf0",
+            "constraintName" : "Critical risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 9",
+              "reason" : "Found security vulnerability sonatype-2019-0115 with severity >= 9 (severity = 9.8)",
+              "reference" : {
+                "value" : "sonatype-2019-0115",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.webjars"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "jquery"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "2.2.4"
+            } ],
+            "name" : "jquery"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "5a319b2c53e44c988cfb423777ecb82b",
+        "policyName" : "Security-Critical",
+        "threatLevel" : 10,
+        "policyViolationId" : "39052767a6734a6d832dc8c919343a2d",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "a-name",
+            "coordinates" : {
+              "name" : "jquery",
+              "qualifier" : "",
+              "version" : "2.2.4"
+            }
+          },
+          "hash" : "d8a50d2ab5679e4b8a25",
+          "constraintFacts" : [ {
+            "constraintId" : "2bb9b555d0254dd2a7248ffc5edfadf0",
+            "constraintName" : "Critical risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 9",
+              "reason" : "Found security vulnerability sonatype-2019-0115 with severity >= 9 (severity = 9.8)",
+              "reference" : {
+                "value" : "sonatype-2019-0115",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Name",
+              "value" : "jquery"
+            }, {
+              "value" : " "
+            }, {
+              "field" : "Version",
+              "value" : "2.2.4"
+            } ],
+            "name" : "jquery"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "5a319b2c53e44c988cfb423777ecb82b",
+        "policyName" : "Security-Critical",
+        "threatLevel" : 10,
+        "policyViolationId" : "a0c6f7de0b404bd69c4e5bd6f942399a",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "spring-web",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.springframework",
+              "version" : "5.3.6"
+            }
+          },
+          "hash" : "f9290db7324194921c23",
+          "constraintFacts" : [ {
+            "constraintId" : "2bb9b555d0254dd2a7248ffc5edfadf0",
+            "constraintName" : "Critical risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 9",
+              "reason" : "Found security vulnerability CVE-2016-1000027 with severity >= 9 (severity = 9.8)",
+              "reference" : {
+                "value" : "CVE-2016-1000027",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.springframework"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "spring-web"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "5.3.6"
+            } ],
+            "name" : "spring-web"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    }, {
+      "trigger" : {
+        "policyId" : "e87a77d0767f4baf8655b9fae98f4ff7",
+        "policyName" : "Security-High",
+        "threatLevel" : 9,
+        "policyViolationId" : "e9f48febe87b4c66b82faaeafae1e622",
+        "componentFacts" : [ {
+          "componentIdentifier" : {
+            "format" : "maven",
+            "coordinates" : {
+              "artifactId" : "jakarta.el",
+              "classifier" : "",
+              "extension" : "jar",
+              "groupId" : "org.glassfish",
+              "version" : "3.0.3"
+            }
+          },
+          "hash" : "dab46ee1ee23f7197c13",
+          "constraintFacts" : [ {
+            "constraintId" : "0dfa1ce1b7c146049a3f8309e857081f",
+            "constraintName" : "High risk CVSS score",
+            "operatorName" : "AND",
+            "conditionFacts" : [ {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity >= 7",
+              "reason" : "Found security vulnerability sonatype-2020-1438 with severity >= 7 (severity = 7.5)",
+              "reference" : {
+                "value" : "sonatype-2020-1438",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            }, {
+              "conditionTypeId" : "SecurityVulnerabilitySeverity",
+              "conditionIndex" : 0,
+              "summary" : "Security Vulnerability Severity < 9",
+              "reason" : "Found security vulnerability sonatype-2020-1438 with severity < 9 (severity = 7.5)",
+              "reference" : {
+                "value" : "sonatype-2020-1438",
+                "type" : "SECURITY_VULNERABILITY_REFID"
+              },
+              "triggerJson" : null
+            } ]
+          } ],
+          "pathnames" : [ ],
+          "displayName" : {
+            "parts" : [ {
+              "field" : "Group",
+              "value" : "org.glassfish"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Artifact",
+              "value" : "jakarta.el"
+            }, {
+              "value" : " : "
+            }, {
+              "field" : "Version",
+              "value" : "3.0.3"
+            } ],
+            "name" : "jakarta.el"
+          }
+        } ]
+      },
+      "actions" : [ ]
+    } ],
+    "affectedComponentCount" : 11,
+    "criticalComponentCount" : 4,
+    "severeComponentCount" : 6,
+    "moderateComponentCount" : 1,
+    "criticalPolicyViolationCount" : 4,
+    "severePolicyViolationCount" : 26,
+    "moderatePolicyViolationCount" : 1,
+    "grandfatheredPolicyViolationCount" : 0,
+    "totalComponentCount" : 79
+  }
+}

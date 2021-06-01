@@ -13,6 +13,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import static jetbrains.teamcity.EchoRunnerConstants.IQ_SERVER_KEY;
 import static jetbrains.teamcity.EchoRunnerConstants.MESSAGE_KEY;
 
 public class EchoRunner extends RunType {
@@ -33,13 +34,13 @@ public class EchoRunner extends RunType {
   @NotNull
   @Override
   public String getDisplayName() {
-    return "Echo Runner";
+    return "Sonatype Scan";
   }
 
   @NotNull
   @Override
   public String getDescription() {
-    return "This is Echo Runner";
+    return "This is Sonatype Scanner";
   }
 
   @Nullable
@@ -81,6 +82,6 @@ public class EchoRunner extends RunType {
   @NotNull
   @Override
   public String describeParameters(@NotNull Map<String, String> parameters) {
-    return "Message: '" + parameters.get(MESSAGE_KEY) + "'";
+    return "IQServer: '" + parameters.get(IQ_SERVER_KEY) + "'";
   }
 }
