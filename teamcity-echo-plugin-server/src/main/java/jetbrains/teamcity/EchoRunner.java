@@ -13,8 +13,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static jetbrains.teamcity.EchoRunnerConstants.IQ_SERVER_KEY;
-import static jetbrains.teamcity.EchoRunnerConstants.MESSAGE_KEY;
+import static jetbrains.teamcity.EchoRunnerConstants.*;
 
 public class EchoRunner extends RunType {
 
@@ -82,6 +81,6 @@ public class EchoRunner extends RunType {
   @NotNull
   @Override
   public String describeParameters(@NotNull Map<String, String> parameters) {
-    return "IQServer: '" + parameters.get(IQ_SERVER_KEY) + "'";
+    return "IQServer: '" + parameters.get(IQ_SERVER_KEY) + "'; Stage:'" + parameters.get(IQ_STAGE_KEY) + "'";
   }
 }

@@ -4,17 +4,17 @@
 package jetbrains.teamcity;
 
 public class Trigger {
-    private PolicyID policyID;
-    private PolicyName policyName;
+    private String policyID;
+    private String policyName;
     private long threatLevel;
     private String policyViolationID;
     private ComponentFact[] componentFacts;
 
-    public PolicyID getPolicyID() { return policyID; }
-    public void setPolicyID(PolicyID value) { this.policyID = value; }
+    public String getPolicyID() { return policyID; }
+    public void setPolicyID(String value) { this.policyID = value; }
 
-    public PolicyName getPolicyName() { return policyName; }
-    public void setPolicyName(PolicyName value) { this.policyName = value; }
+    public String getPolicyName() { return policyName; }
+    public void setPolicyName(String value) { this.policyName = value; }
 
     public long getThreatLevel() { return threatLevel; }
     public void setThreatLevel(long value) { this.threatLevel = value; }
