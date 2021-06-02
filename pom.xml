@@ -10,14 +10,14 @@
   </properties>
   <repositories>
     <repository>
-        <id>JetBrains</id>
-        <url>http://nexus:8081/repository/maven-public/</url>
+        <id>jetbrains-all</id>
+        <url>https://download.jetbrains.com/teamcity-repository</url>
     </repository>
   </repositories>
   <pluginRepositories>
       <pluginRepository>
-          <id>JetBrains</id>
-          <url>http://nexus:8081/repository/maven-public/</url>
+          <id>jetbrains-all</id>
+          <url>https://download.jetbrains.com/teamcity-repository</url>
       </pluginRepository>
   </pluginRepositories>
   <build>
@@ -49,6 +49,6 @@
     <module>teamcity-echo-plugin-server</module>
     <module>teamcity-echo-plugin-agent</module>
     <module>teamcity-echo-plugin-common</module>
-    <module>build</module>
+    <!--module>build</module-->
   </modules>
 </project>
