@@ -9,6 +9,8 @@
       <teamcity-version>2021.1</teamcity-version>
       <!--teamcityDir>C:\Cameron\Software\TeamCity</teamcityDir-->
       <!--teamcityDataDir>${pom.basedir}\data</teamcityDataDir-->
+      <maven.compiler.source>1.8</maven.compiler.source>
+      <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
   <repositories>
     <repository>
