@@ -7,6 +7,8 @@
   <packaging>pom</packaging>
   <properties>
       <teamcity-version>2021.1</teamcity-version>
+      <!--teamcityDir>C:\Cameron\Software\TeamCity</teamcityDir-->
+      <!--teamcityDataDir>${pom.basedir}\data</teamcityDataDir-->
   </properties>
   <repositories>
     <repository>
@@ -21,26 +23,12 @@
       </pluginRepository>
   </pluginRepositories>
   <build>
-      <plugins>
-          <plugin>
-              <groupId>org.jetbrains.teamcity</groupId>
-              <artifactId>teamcity-sdk-maven-plugin</artifactId>
-              <version>0.4</version>
-              <configuration>
-                  <teamcityDir>C:\Cameron\Software\TeamCity</teamcityDir>
-              </configuration>
-          </plugin>
-      </plugins>
       <pluginManagement>
           <plugins>
               <plugin>
                   <groupId>org.jetbrains.teamcity</groupId>
                   <artifactId>teamcity-sdk-maven-plugin</artifactId>
                   <version>0.4</version>
-                  <configuration>
-                      <teamcityDir>C:\Cameron\Software\TeamCity</teamcityDir>
-                      <dataDirectory>${pom.basedir}\data</dataDirectory>
-                  </configuration>
               </plugin>
           </plugins>
       </pluginManagement>
