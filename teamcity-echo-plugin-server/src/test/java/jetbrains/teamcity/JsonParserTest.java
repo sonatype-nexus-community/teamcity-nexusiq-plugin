@@ -1,33 +1,26 @@
 package jetbrains.teamcity;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-
 import jetbrains.teamcity.results.IQScanResult;
 import jetbrains.teamcity.web.JsonParser;
 
+import org.apache.commons.io.IOUtils;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.HashMap;
-import java.util.Map;
+import java.io.InputStream;
 
 class
 JsonParserTest {
 
     @Test
-    public void ShouldParseFile() throws JsonProcessingException {
-        String filePath = "C:\\Cameron\\Docs\\projects\\maven\\team-city\\teamcity-echo-plugin\\results.json";
+    public void ShouldParseFile() throws IOException {
         String content = "";
-        try
+        try(InputStream in = this.getClass().getResourceAsStream("/results.json"))
         {
-            content = new String ( Files.readAllBytes( Paths.get(filePath) ) );
-        } catch (IOException e) {
-            e.printStackTrace();
+          content = IOUtils.toString(in, "UTF-8");
         }
-        Map<String, Object> model = new HashMap<>() ;
+
         IQScanResult result =  JsonParser.ParseJson(content);
 
         Assertions.assertEquals( "petclinic", result.getApplicationID());
