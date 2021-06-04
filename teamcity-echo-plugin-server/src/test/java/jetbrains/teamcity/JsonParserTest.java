@@ -1,8 +1,9 @@
-package jetbrains.teamcity.web;
+package jetbrains.teamcity;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 
 import jetbrains.teamcity.results.IQScanResult;
+import jetbrains.teamcity.web.JsonParser;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
