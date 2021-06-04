@@ -1,6 +1,6 @@
 // ComponentFact.java
 
-package jetbrains.teamcity;
+package jetbrains.teamcity.results;
 
 public class ComponentFact {
     private ComponentIdentifier componentIdentifier;

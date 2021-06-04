@@ -1,7 +1,7 @@
 
 // PolicyEvaluationResult.java
 
-package jetbrains.teamcity;
+package jetbrains.teamcity.results;
 
 public class PolicyEvaluationResult {
     private Alert[] alerts;

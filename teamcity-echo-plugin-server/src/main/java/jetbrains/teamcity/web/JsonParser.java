@@ -3,7 +3,8 @@ package jetbrains.teamcity.web;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.MapperFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import jetbrains.teamcity.IQScanResult;
+
+import jetbrains.teamcity.results.IQScanResult;
 
 public class JsonParser {
     public static ObjectMapper getObjectMapper(){

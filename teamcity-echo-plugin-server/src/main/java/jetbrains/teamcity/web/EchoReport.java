@@ -10,7 +10,8 @@ import jetbrains.buildServer.serverSide.artifacts.BuildArtifactsViewMode;
 import jetbrains.buildServer.web.openapi.BuildTab;
 import jetbrains.buildServer.web.openapi.PluginDescriptor;
 import jetbrains.buildServer.web.openapi.WebControllerManager;
-import jetbrains.teamcity.IQScanResult;
+import jetbrains.teamcity.results.IQScanResult;
+
 import org.jetbrains.annotations.NotNull;
 
 import java.io.IOException;

@@ -2,7 +2,7 @@
 
 // Coordinates.java
 
-package jetbrains.teamcity;
+package jetbrains.teamcity.results;
 
 public class Coordinates {
     private String artifactID;

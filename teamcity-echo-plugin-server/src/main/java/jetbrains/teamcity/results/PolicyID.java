@@ -1,7 +1,7 @@
 
 // PolicyID.java
 
-package jetbrains.teamcity;
+package jetbrains.teamcity.results;
 
 public class PolicyID {
     private String policyID;

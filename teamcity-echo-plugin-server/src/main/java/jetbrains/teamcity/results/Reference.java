@@ -2,7 +2,7 @@
 
 // Reference.java
 
-package jetbrains.teamcity;
+package jetbrains.teamcity.results;
 
 public class Reference {
     private String value;

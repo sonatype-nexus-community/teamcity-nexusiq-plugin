@@ -1,7 +1,7 @@
 
 // Format.java
 
-package jetbrains.teamcity;
+package jetbrains.teamcity.results;
 
 import java.io.IOException;
 

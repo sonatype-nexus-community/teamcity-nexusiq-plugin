@@ -2,7 +2,7 @@
 
 // DisplayName.java
 
-package jetbrains.teamcity;
+package jetbrains.teamcity.results;
 
 public class DisplayName {
     private Part[] parts;

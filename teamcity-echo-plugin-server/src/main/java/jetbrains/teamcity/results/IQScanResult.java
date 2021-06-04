@@ -1,6 +1,6 @@
 // IQScanResult.java
 
-package jetbrains.teamcity;
+package jetbrains.teamcity.results;
 
 public class IQScanResult {
     private String applicationID;

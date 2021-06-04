@@ -1,7 +1,7 @@
 
 // ConstraintFact.java
 
-package jetbrains.teamcity;
+package jetbrains.teamcity.results;
 
 public class ConstraintFact {
     private String constraintID;

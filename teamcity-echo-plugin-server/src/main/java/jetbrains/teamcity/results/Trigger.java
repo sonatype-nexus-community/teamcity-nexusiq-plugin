@@ -1,7 +1,7 @@
 
 // Trigger.java
 
-package jetbrains.teamcity;
+package jetbrains.teamcity.results;
 
 public class Trigger {
     private String policyID;

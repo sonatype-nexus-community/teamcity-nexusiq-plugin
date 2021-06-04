@@ -1,7 +1,7 @@
 
 // Part.java
 
-package jetbrains.teamcity;
+package jetbrains.teamcity.results;
 
 public class Part {
     private String field;

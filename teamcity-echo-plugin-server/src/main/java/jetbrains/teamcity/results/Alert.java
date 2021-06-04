@@ -1,7 +1,7 @@
 
 // Alert.java
 
-package jetbrains.teamcity;
+package jetbrains.teamcity.results;
 
 public class Alert {
     private Trigger trigger;

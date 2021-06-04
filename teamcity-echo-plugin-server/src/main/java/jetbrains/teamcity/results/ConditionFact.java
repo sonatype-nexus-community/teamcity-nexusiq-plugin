@@ -1,7 +1,7 @@
 
 // ConditionFact.java
 
-package jetbrains.teamcity;
+package jetbrains.teamcity.results;
 
 public class ConditionFact {
     private String conditionTypeID;
