@@ -49,6 +49,6 @@
     <module>teamcity-echo-plugin-server</module>
     <module>teamcity-echo-plugin-agent</module>
     <module>teamcity-echo-plugin-common</module>
-    <!--module>build</module-->
+    <module>build</module>
   </modules>
 </project>
