@@ -20,7 +20,6 @@ public class EchoService extends BuildServiceAdapter {
   @Override
   public ProgramCommandLine makeProgramCommandLine() throws RunBuildException {
 
-    final String message = getRunnerParameters().get(EchoRunnerConstants.MESSAGE_KEY);
     final String jarFile = getRunnerParameters().get(EchoRunnerConstants.IQ_CLIJARFILE_KEY);
     final String iq_server = getRunnerParameters().get(EchoRunnerConstants.IQ_SERVER_KEY);
     final String username = getRunnerParameters().get(EchoRunnerConstants.IQ_USERNAME_KEY);
@@ -29,11 +28,6 @@ public class EchoService extends BuildServiceAdapter {
     final String stage = getRunnerParameters().get(EchoRunnerConstants.IQ_STAGE_KEY);
     final String scantarget = getRunnerParameters().get(EchoRunnerConstants.IQ_SCANTARGET_KEY);
 
-
-
-
-//    final String scriptContent = "echo " + message + " > echo.txt";
-
     final String scriptContent = String.format("java -jar %s -s %s -a %s:%s -i %s -r results.json -t %s %s", jarFile, iq_server, username, password, applicationid, stage, scantarget);
 
     final String script = getCustomScript(scriptContent);
@@ -41,6 +35,7 @@ public class EchoService extends BuildServiceAdapter {
     setExecutableAttribute(script);
 
     return new SimpleProgramCommandLine(getRunnerContext(), script, Collections.<String>emptyList());
+    //return new SimpleProgramCommandLine(getRunnerContext(), "java", Arrays.asList("-jar", jarFile, "-s", iq_server, "-a", username + ':' + password, "-i", applicationid, "-r", "results.json", "-t", stage, scantarget));
   }
 
   String getCustomScript(String scriptContent) throws RunBuildException {
