@@ -27,7 +27,7 @@
 	</tr>
 	<tr>
 		<th>
-			<label for="${iqclijarfile}">IQCLI path: <l:star/>
+			<label for="${iqclijarfile}">IQCLI.jar path: <l:star/>
 			</label>
 		</th>
 		<td>
