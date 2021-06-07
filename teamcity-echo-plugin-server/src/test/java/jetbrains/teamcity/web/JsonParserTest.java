@@ -1,7 +1,6 @@
-package jetbrains.teamcity;
+package jetbrains.teamcity.web;
 
 import jetbrains.teamcity.results.IQScanResult;
-import jetbrains.teamcity.web.JsonParser;
 
 import org.apache.commons.io.IOUtils;
 import org.junit.jupiter.api.Assertions;
