@@ -7,7 +7,7 @@
     </formats>
     <files>
         <file>
-            <source>../teamcity-echo-plugin-agent/teamcity-plugin.xml</source>
+            <source>../teamcity-iq-plugin-agent/teamcity-plugin.xml</source>
             <outputDirectory>/</outputDirectory>
         </file>
     </files>
@@ -15,8 +15,8 @@
         <moduleSet>
             <useAllReactorProjects>true</useAllReactorProjects>
             <includes>
-                <include>jetbrains.teamcity:teamcity-echo-plugin-agent</include>
-                <include>jetbrains.teamcity:teamcity-echo-plugin-common</include>
+                <include>org.sonatype.teamcity:teamcity-iq-plugin-agent</include>
+                <include>org.sonatype.teamcity:teamcity-iq-plugin-common</include>
             </includes>
             <binaries>
                 <outputDirectory>lib</outputDirectory>

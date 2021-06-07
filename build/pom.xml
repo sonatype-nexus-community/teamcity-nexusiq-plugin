@@ -2,32 +2,32 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <artifactId>teamcity-echo-plugin</artifactId>
-    <groupId>jetbrains.teamcity</groupId>
+    <artifactId>teamcity-iq-plugin</artifactId>
+    <groupId>org.sonatype.teamcity</groupId>
     <version>1.0-SNAPSHOT</version>
   </parent>
   <artifactId>build</artifactId>
   <packaging>pom</packaging>
   <properties>
       <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
-      <teamcity.teamcity-echo-plugin.plugin.version>snapshot-${maven.build.timestamp}</teamcity.teamcity-echo-plugin.plugin.version>
-      <teamcity.teamcity-echo-plugin.plugin.vendorName>Plugin vendor name</teamcity.teamcity-echo-plugin.plugin.vendorName>
-      <teamcity.teamcity-echo-plugin.plugin.vendorUrl>Plugin vendor URL</teamcity.teamcity-echo-plugin.plugin.vendorUrl>
+      <teamcity-iq-plugin.plugin.version>snapshot-${maven.build.timestamp}</teamcity-iq-plugin.plugin.version>
+      <teamcity-iq-plugin.plugin.vendorName>Plugin vendor name</teamcity-iq-plugin.plugin.vendorName>
+      <teamcity-iq-plugin.plugin.vendorUrl>Plugin vendor URL</teamcity-iq-plugin.plugin.vendorUrl>
   </properties>
   <dependencies>
       <dependency>
-           <groupId>jetbrains.teamcity</groupId>
-           <artifactId>teamcity-echo-plugin-agent</artifactId>
+           <groupId>org.sonatype.teamcity</groupId>
+           <artifactId>teamcity-iq-plugin-agent</artifactId>
            <version>1.0-SNAPSHOT</version>
       </dependency>
       <dependency>
-           <groupId>jetbrains.teamcity</groupId>
-           <artifactId>teamcity-echo-plugin-common</artifactId>
+           <groupId>org.sonatype.teamcity</groupId>
+           <artifactId>teamcity-iq-plugin-common</artifactId>
            <version>1.0-SNAPSHOT</version>
       </dependency>
       <dependency>
-           <groupId>jetbrains.teamcity</groupId>
-           <artifactId>teamcity-echo-plugin-server</artifactId>
+           <groupId>org.sonatype.teamcity</groupId>
+           <artifactId>teamcity-iq-plugin-server</artifactId>
            <version>1.0-SNAPSHOT</version>
       </dependency>
   </dependencies>
@@ -51,15 +51,15 @@
                 <replacements>
                     <replacement>
                         <token>@Version@</token>
-                        <value>${teamcity.teamcity-echo-plugin.plugin.version}</value>
+                        <value>${teamcity-iq-plugin.plugin.version}</value>
                     </replacement>
                     <replacement>
                         <token>@VendorName@</token>
-                        <value>${teamcity.teamcity-echo-plugin.plugin.vendorName}</value>
+                        <value>${teamcity-iq-plugin.plugin.vendorName}</value>
                     </replacement>
                     <replacement>
                         <token>@VendorURL@</token>
-                        <value>${teamcity.teamcity-echo-plugin.plugin.vendorUrl}</value>
+                        <value>${teamcity-iq-plugin.plugin.vendorUrl}</value>
                     </replacement>
                 </replacements>                        
             </configuration>
@@ -75,7 +75,7 @@
                   <goal>single</goal>
                 </goals>
                 <configuration>
-                  <finalName>teamcity-echo-plugin-agent</finalName>
+                  <finalName>teamcity-iq-plugin-agent</finalName>
                   <appendAssemblyId>false</appendAssemblyId>
                   <descriptors>
                     <descriptor>plugin-agent-assembly.xml</descriptor>
@@ -89,7 +89,7 @@
                   <goal>single</goal>
                 </goals>
                 <configuration>
-                  <finalName>teamcity-echo-plugin</finalName>
+                  <finalName>teamcity-iq-plugin</finalName>
                   <outputDirectory>${project.parent.build.directory}</outputDirectory>
                   <appendAssemblyId>false</appendAssemblyId>
                   <descriptors>

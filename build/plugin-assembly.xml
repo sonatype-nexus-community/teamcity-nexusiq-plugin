@@ -11,7 +11,7 @@
          <outputDirectory>/</outputDirectory>
      </file> 
      <file>
-         <source>target/teamcity-echo-plugin-agent.zip</source>
+         <source>target/teamcity-iq-plugin-agent.zip</source>
          <outputDirectory>agent</outputDirectory>
      </file> 
   </files>
@@ -19,8 +19,8 @@
     <moduleSet>
        <useAllReactorProjects>true</useAllReactorProjects>
        <includes>
-           <include>jetbrains.teamcity:teamcity-echo-plugin-server</include>
-           <include>jetbrains.teamcity:teamcity-echo-plugin-common</include>
+           <include>org.sonatype.teamcity:teamcity-iq-plugin-server</include>
+           <include>org.sonatype.teamcity:teamcity-iq-plugin-common</include>
        </includes> 
        <binaries>
            <outputDirectory>server</outputDirectory>

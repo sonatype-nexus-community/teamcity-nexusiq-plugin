@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <teamcity-plugin   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:schemas-jetbrains-com:teamcity-plugin-v1-xml">
   <info>
-    <name>teamcity-echo-plugin</name>
-    <display-name>teamcity-echo-plugin</display-name>
+    <name>teamcity-iq-plugin</name>
+    <display-name>teamcity-iq-plugin</display-name>
     <version>@Version@</version>
     <description>Scan Code with Sonatype Nexus IQ</description>
     <download-url>Plugin download URL</download-url>
