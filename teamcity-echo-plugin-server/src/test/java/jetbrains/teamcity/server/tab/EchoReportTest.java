@@ -1,4 +1,4 @@
-package jetbrains.teamcity.web;
+package jetbrains.teamcity.server.tab;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

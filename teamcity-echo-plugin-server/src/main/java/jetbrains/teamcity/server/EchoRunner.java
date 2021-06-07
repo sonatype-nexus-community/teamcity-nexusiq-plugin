@@ -1,19 +1,21 @@
-package jetbrains.teamcity;
+package jetbrains.teamcity.server;
 
 import jetbrains.buildServer.serverSide.InvalidProperty;
 import jetbrains.buildServer.serverSide.PropertiesProcessor;
 import jetbrains.buildServer.serverSide.RunType;
 import jetbrains.buildServer.serverSide.RunTypeRegistry;
 import jetbrains.buildServer.web.openapi.PluginDescriptor;
+import jetbrains.teamcity.common.EchoRunnerConstants;
+
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+
+import static jetbrains.teamcity.common.EchoRunnerConstants.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import static jetbrains.teamcity.EchoRunnerConstants.*;
 
 public class EchoRunner extends RunType {
 

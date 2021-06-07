@@ -1,4 +1,4 @@
-package jetbrains.teamcity.web;
+package jetbrains.teamcity.server.tab;
 
 
 import com.intellij.openapi.util.io.StreamUtil;

@@ -1,9 +1,11 @@
-package jetbrains.teamcity;
+package jetbrains.teamcity.agent;
 
 import jetbrains.buildServer.agent.AgentBuildRunnerInfo;
 import jetbrains.buildServer.agent.BuildAgentConfiguration;
 import jetbrains.buildServer.agent.runner.CommandLineBuildService;
 import jetbrains.buildServer.agent.runner.CommandLineBuildServiceFactory;
+import jetbrains.teamcity.common.EchoRunnerConstants;
+
 import org.jetbrains.annotations.NotNull;
 
 public class EchoFactory implements CommandLineBuildServiceFactory {

@@ -1,10 +1,12 @@
-package jetbrains.teamcity;
+package jetbrains.teamcity.agent;
 
 import jetbrains.buildServer.RunBuildException;
 import jetbrains.buildServer.agent.runner.BuildServiceAdapter;
 import jetbrains.buildServer.agent.runner.ProgramCommandLine;
 import jetbrains.buildServer.agent.runner.SimpleProgramCommandLine;
 import jetbrains.buildServer.util.FileUtil;
+import jetbrains.teamcity.common.EchoRunnerConstants;
+
 import org.jetbrains.annotations.NotNull;
 
 import java.io.File;

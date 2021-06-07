@@ -1,4 +1,4 @@
-package jetbrains.teamcity.web;
+package jetbrains.teamcity.server.tab;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.MapperFeature;

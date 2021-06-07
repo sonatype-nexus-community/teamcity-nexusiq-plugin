@@ -54,7 +54,7 @@
 			<td width="47" style="border-radius: 2px; float:left;width:47px;margin:2;padding:2;background-color:#fddf77;color:white;text-align:center;">
 								<b><c:out value="${moderatePolicyViolationCount}" default="no content to display"/></b>
 			</td>
-		</tr
+		</tr>
 		<tr>
 			<td>
 <c:out value="${grandfatheredPolicyViolationCount}" default="no content to display"/> grandfathered

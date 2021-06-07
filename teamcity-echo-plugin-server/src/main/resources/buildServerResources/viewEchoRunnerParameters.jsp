@@ -1,4 +1,4 @@
-<%@ page import="jetbrains.teamcity.EchoRunnerConstants" %>
+<%@ page import="jetbrains.teamcity.common.EchoRunnerConstants" %>
 <%@ taglib prefix="props" tagdir="/WEB-INF/tags/props" %>
 <c:set var="messageId" value="<%=EchoRunnerConstants.MESSAGE_KEY%>"/>
 <c:set var="iqserver" value="<%=EchoRunnerConstants.IQ_SERVER_KEY%>"/>
