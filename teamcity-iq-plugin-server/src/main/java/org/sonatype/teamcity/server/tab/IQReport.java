@@ -32,10 +32,8 @@ public class IQReport extends BuildTab {
     final BuildArtifactHolder artifact = buildArtifacts.findArtifact("results.json");
     if (artifact.isAvailable()) {
       try {
-//        Reader reader = Files.newBufferedReader(artifact.getArtifact().);
         final String resultsText = StreamUtil.readText(artifact.getArtifact().getInputStream());
         IQScanResult result = JsonParser.ParseJson(resultsText);
-        System.out.println("applicationId" + result.getApplicationID());
         model.put("text", resultsText);
         model.put("affectedComponentCount", result.getPolicyEvaluationResult().getAffectedComponentCount());
         model.put("reportHTMLURL", result.getReportHTMLURL());

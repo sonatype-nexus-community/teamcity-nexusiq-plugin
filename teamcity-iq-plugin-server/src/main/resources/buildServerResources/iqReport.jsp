@@ -1,10 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-
-
-
-
-<%--@elvariable id="text" type="java.lang.String"--%>
 <%--@elvariable id="reportHTMLURL" type="java.lang.String"--%>
 <%--@elvariable id="applicationId" type="java.lang.String"--%>
 <%--@elvariable id="stage" type="java.lang.String"--%>
@@ -21,6 +16,11 @@
 
 <div>Sonatype logo</div>
 <div>
+<c:choose>
+<c:when test="${reportHTMLURL == null}">
+	Missing Sonatype scan result in published build artifact: <b>please add <code>results.json</code> to Artifact Paths in your build general settings</b>.
+</c:when>
+<c:otherwise>
 	<table>
 		<tr>
 			<td>
@@ -31,17 +31,17 @@
 		<tr>
 			<td>
 				<b>Application: </b><c:out value="${applicationId}" default="no content to display"/><br/>
-</td>
+			</td>
 		</tr>
 		<tr>
 			<td>
 				<b>IQ Stage: </b><c:out value="${stage}" default="no content to display"/>
-</td>
+			</td>
 		</tr>
 		<tr>
 			<td>
 				<b><c:out value="${totalViolationCount}" default="no content to display"/> Violations</b> affecting <c:out value="${affectedComponentCount}" default="no content to display"/> components
-</td>
+			</td>
 		</tr>
 		<tr>
 			<td width="47" style="border-radius: 2px;float:left;width:47px;margin:2;padding:2;background-color:red;color:white;text-align:center;">
@@ -51,14 +51,16 @@
 				<b><c:out value="${severePolicyViolationCount}" default="no content to display"/></b>
 			</td>
 			<td width="47" style="border-radius: 2px; float:left;width:47px;margin:2;padding:2;background-color:#fddf77;color:white;text-align:center;">
-								<b><c:out value="${moderatePolicyViolationCount}" default="no content to display"/></b>
+				<b><c:out value="${moderatePolicyViolationCount}" default="no content to display"/></b>
 			</td>
 		</tr>
 		<tr>
 			<td>
-<c:out value="${grandfatheredPolicyViolationCount}" default="no content to display"/> grandfathered
-</td>
+				<c:out value="${grandfatheredPolicyViolationCount}" default="no content to display"/> grandfathered
+			</td>
 		</tr>
 	</table>
+</c:otherwise>
+</c:choose>
 </div>
 <hr/>
