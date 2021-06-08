@@ -83,6 +83,6 @@ public class IQRunner extends RunType {
   @NotNull
   @Override
   public String describeParameters(@NotNull Map<String, String> parameters) {
-    return "IQServer: '" + parameters.get(IQ_SERVER_KEY) + "'; Stage:'" + parameters.get(IQ_STAGE_KEY) + "'";
+    return "IQServer: '" + parameters.get(IQ_SERVER_KEY) + "'; ApplicationId: '" + parameters.get(IQ_APPLICATIONID_KEY) + "'; Stage: '" + parameters.get(IQ_STAGE_KEY) + "'";
   }
 }
