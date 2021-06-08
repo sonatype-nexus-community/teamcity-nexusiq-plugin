@@ -1,4 +1,9 @@
 .gitignore
 .idea
+*.iml
 data
 target
+.project
+.classpath
+.settings/
+servers/
