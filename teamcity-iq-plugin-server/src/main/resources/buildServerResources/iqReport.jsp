@@ -18,7 +18,7 @@
 <div>
 <c:choose>
 <c:when test="${reportHTMLURL == null}">
-	Missing Sonatype scan result in published build artifact: <b>please add <code>results.json</code> to Artifact Paths in your build general settings</b>.
+	Sonatype scan result <code>results.json</code> not yet available in published build artifacts...
 </c:when>
 <c:otherwise>
 	<table>
