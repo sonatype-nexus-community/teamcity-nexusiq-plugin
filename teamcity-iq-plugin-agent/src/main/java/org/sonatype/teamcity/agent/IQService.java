@@ -1,9 +1,9 @@
 package org.sonatype.teamcity.agent;
 
 import jetbrains.buildServer.RunBuildException;
+import jetbrains.buildServer.agent.BuildProgressLogger;
 import jetbrains.buildServer.agent.runner.BuildServiceAdapter;
 import jetbrains.buildServer.agent.runner.ProgramCommandLine;
-import jetbrains.buildServer.agent.runner.SimpleProgramCommandLine;
 
 import org.jetbrains.annotations.NotNull;
 import org.sonatype.teamcity.common.IQRunnerConstants;
@@ -24,7 +24,16 @@ public class IQService extends BuildServiceAdapter {
     final String stage = getRunnerParameters().get(IQRunnerConstants.IQ_STAGE_KEY);
     final String scantarget = getRunnerParameters().get(IQRunnerConstants.IQ_SCANTARGET_KEY);
 
-    return new SimpleProgramCommandLine(getRunnerContext(), "java", Arrays.asList("-jar", jarFile, "-s", iq_server, "-a", username + ':' + password, "-i", applicationid, "-r", "results.json", "-t", stage, scantarget));
+    return createProgramCommandline("java", Arrays.asList("-jar", jarFile, "-s", iq_server, "-a", username + ':' + password, "-i", applicationid, "-r", "results.json", "-t", stage, scantarget));
   }
 
+  @Override
+  public void afterProcessFinished() throws RunBuildException {
+    BuildProgressLogger buildLogger = getLogger();
+
+    // automatically publish scan result
+    buildLogger.message("##teamcity[publishArtifacts 'results.json']");
+
+    super.afterProcessFinished();
+  }
 }
