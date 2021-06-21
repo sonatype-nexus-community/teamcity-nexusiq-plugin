@@ -4,10 +4,10 @@ This plugin implements a custom "Sonatype Scan" build step for [Nexus Lifecycle]
 
 ## To install
 
-1. Run the build
-2. copy into plugins folder of team city
-3. download nexusiq cli to the agent
-4. fill in form
+1. Run the build: `mvn package`
+2. copy `target/teamcity-iq-plugin.zip` into plugins folder of TeamCity
+3. download [nexusiq cli JAR file](https://help.sonatype.com/iqserver/product-information/download-and-compatibility#DownloadandCompatibility-CLI) to the agent
+4. add 'Sonatype Scan' step in your pipeline and fill in the form
 5. run
 
 
