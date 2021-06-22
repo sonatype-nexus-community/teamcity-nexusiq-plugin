@@ -13,9 +13,11 @@ import jetbrains.buildServer.web.openapi.WebControllerManager;
 
 import org.jetbrains.annotations.NotNull;
 import org.sonatype.teamcity.results.IQScanResult;
+import org.sonatype.teamcity.results.PolicyEvaluationResult;
 
 import java.io.IOException;
 import java.util.Map;
+import java.util.concurrent.atomic.AtomicReference;
 
 public class IQReport extends BuildTab {
 
@@ -26,33 +28,52 @@ public class IQReport extends BuildTab {
 
   @Override
   protected void fillModel(@NotNull Map<String, Object> model, @NotNull SBuild build) {
-
-
     final BuildArtifacts buildArtifacts = build.getArtifacts(BuildArtifactsViewMode.VIEW_DEFAULT);
-    final BuildArtifactHolder artifact = buildArtifacts.findArtifact("results.json");
-    if (artifact.isAvailable()) {
-      try {
-        final String resultsText = StreamUtil.readText(artifact.getArtifact().getInputStream());
-        IQScanResult result = JsonParser.ParseJson(resultsText);
-        model.put("text", resultsText);
-        model.put("affectedComponentCount", result.getPolicyEvaluationResult().getAffectedComponentCount());
-        model.put("reportHTMLURL", result.getReportHTMLURL());
-        model.put("applicationId", result.getApplicationID());
-//TODO; Work out how to get server params        final String stage = getRunnerParameters().get(EchoRunnerConstants.IQ_STAGE_KEY);
-        model.put("stage", "release"); //         -getParameters
-        model.put("criticalComponentCount", result.getPolicyEvaluationResult().getCriticalComponentCount());
-        model.put("severeComponentCount", result.getPolicyEvaluationResult().getSevereComponentCount());
-        model.put("moderateComponentCount", result.getPolicyEvaluationResult().getModerateComponentCount());
-        model.put("criticalPolicyViolationCount", result.getPolicyEvaluationResult().getCriticalPolicyViolationCount());
-        model.put("severePolicyViolationCount", result.getPolicyEvaluationResult().getSeverePolicyViolationCount());
-        model.put("moderatePolicyViolationCount", result.getPolicyEvaluationResult().getModeratePolicyViolationCount());
-        model.put("grandfatheredPolicyViolationCount", result.getPolicyEvaluationResult().getGrandfatheredPolicyViolationCount());
-        model.put("totalComponentCount", result.getPolicyEvaluationResult().getTotalComponentCount());
-        model.put("totalViolationCount",result.getPolicyEvaluationResult().getCriticalPolicyViolationCount()+result.getPolicyEvaluationResult().getSeverePolicyViolationCount()+result.getPolicyEvaluationResult().getModeratePolicyViolationCount());
 
-      } catch (IOException e) {
-        e.printStackTrace();
+    // find results-<stage>.json artifact
+    final AtomicReference<String> locatedArtifactPath = new AtomicReference<String>(null);
+    build.getArtifacts(BuildArtifactsViewMode.VIEW_ALL_WITH_ARCHIVES_CONTENT).iterateArtifacts(artifact -> {
+      if(artifact.getName().matches("^results-.+.json$")){
+        locatedArtifactPath.set(artifact.getName());
+        return BuildArtifacts.BuildArtifactsProcessor.Continuation.BREAK;
       }
+      else return BuildArtifacts.BuildArtifactsProcessor.Continuation.CONTINUE;
+    });
+
+    String artifactPath = locatedArtifactPath.get();
+    if (artifactPath == null) {
+      return;
     }
+    String stage = artifactPath.substring("results-".length(), artifactPath.length()-".json".length());
+
+    final BuildArtifactHolder artifact = buildArtifacts.findArtifact(artifactPath);
+    if (!artifact.isAvailable()) {
+      return;
+    }
+
+    IQScanResult result = null;
+    try {
+      final String resultsText = StreamUtil.readText(artifact.getArtifact().getInputStream());
+      result = JsonParser.ParseJson(resultsText);
+    } catch (IOException e) {
+      e.printStackTrace();
+      return;
+    }
+
+    PolicyEvaluationResult per = result.getPolicyEvaluationResult();
+    model.put("affectedComponentCount", per.getAffectedComponentCount());
+    model.put("reportHTMLURL", result.getReportHTMLURL());
+    model.put("applicationId", result.getApplicationID());
+    model.put("stage", stage);
+    model.put("criticalComponentCount", per.getCriticalComponentCount());
+    model.put("severeComponentCount", per.getSevereComponentCount());
+    model.put("moderateComponentCount", per.getModerateComponentCount());
+    model.put("criticalPolicyViolationCount", per.getCriticalPolicyViolationCount());
+    model.put("severePolicyViolationCount", per.getSeverePolicyViolationCount());
+    model.put("moderatePolicyViolationCount", per.getModeratePolicyViolationCount());
+    model.put("grandfatheredPolicyViolationCount", per.getGrandfatheredPolicyViolationCount());
+    model.put("totalComponentCount", per.getTotalComponentCount());
+    model.put("totalViolationCount", per.getCriticalPolicyViolationCount() + per.getSeverePolicyViolationCount() + per.getModeratePolicyViolationCount());
+
   }
 }

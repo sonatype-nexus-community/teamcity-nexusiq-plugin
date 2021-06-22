@@ -11,6 +11,7 @@ import org.sonatype.teamcity.common.IQRunnerConstants;
 import java.util.Arrays;
 
 public class IQService extends BuildServiceAdapter {
+  String results;
 
   @NotNull
   @Override
@@ -24,7 +25,9 @@ public class IQService extends BuildServiceAdapter {
     final String stage = getRunnerParameters().get(IQRunnerConstants.IQ_STAGE_KEY);
     final String scantarget = getRunnerParameters().get(IQRunnerConstants.IQ_SCANTARGET_KEY);
 
-    return createProgramCommandline("java", Arrays.asList("-jar", jarFile, "-s", iq_server, "-a", username + ':' + password, "-i", applicationid, "-r", "results.json", "-t", stage, scantarget));
+    results = "results-" + stage + ".json";
+
+    return createProgramCommandline("java", Arrays.asList("-jar", jarFile, "-s", iq_server, "-a", username + ':' + password, "-i", applicationid, "-r", results, "-t", stage, scantarget));
   }
 
   @Override
@@ -32,7 +35,7 @@ public class IQService extends BuildServiceAdapter {
     BuildProgressLogger buildLogger = getLogger();
 
     // automatically publish scan result
-    buildLogger.message("##teamcity[publishArtifacts 'results.json']");
+    buildLogger.message("##teamcity[publishArtifacts '" + results + "']");
 
     super.afterProcessFinished();
   }
