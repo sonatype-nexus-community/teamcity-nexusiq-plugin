@@ -79,8 +79,12 @@
 		</th>
 		<td>
 			<div class="posRel">
-				<props:textProperty name="${stage}" size="56" maxlength="100"/>
-				<span class="error" id="error_${stage}"/>
+				<props:selectProperty name="${stage}" enableFilter="false" className="smallField">
+					<props:option value="build">build</props:option>
+					<props:option value="stage-release">stage-release</props:option>
+					<props:option value="release">release</props:option>
+					<props:option value="operate">operate</props:option>
+				</props:selectProperty>
 			</div>
 		</td>
 	</tr>
