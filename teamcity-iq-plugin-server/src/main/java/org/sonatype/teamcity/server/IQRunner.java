@@ -76,7 +76,14 @@ public class IQRunner extends RunType {
   @Nullable
   @Override
   public Map<String, String> getDefaultRunnerProperties() {
-    return new HashMap<>();
+    return new HashMap<String, String>() {
+      {
+        put(IQ_STAGE_KEY, "build");
+        put(IQ_SERVER_KEY, "http://localhost:8070/");
+        put(IQ_USERNAME_KEY, "admin");
+        put(IQ_PASSWORD_KEY, "admin123");
+      }
+    };
   }
 
 
