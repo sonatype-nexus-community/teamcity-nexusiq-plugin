@@ -1,5 +1,7 @@
 # Sonatype Nexus Lifecycle/IQ plugin for TeamCity
 
+[![CircleCI](https://circleci.com/gh/sonatype-nexus-community/teamcity-nexusiq-plugin.svg?style=shield)](https://circleci.com/gh/sonatype-nexus-community/teamcity-nexusiq-plugin)
+
 This plugin implements a custom "Sonatype Scan" build step for [Nexus Lifecycle](https://www.sonatype.com/products/lifecycle).
 
 ## To install
