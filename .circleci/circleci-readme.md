@@ -30,7 +30,7 @@ The local build runs in a docker container.
 Miscellaneous
 -------------
 
-To allow your CI build to push changes back to github (e.g. release tags, etc), you need to create setup
+To allow your CI build to push changes back to github (e.g. release tags, etc), you need to create
  a github "Deploy Key" with write access. The command below will create such a key. Use an empty password.
  See: https://circleci.com/docs/2.0/add-ssh-key/#steps
 
