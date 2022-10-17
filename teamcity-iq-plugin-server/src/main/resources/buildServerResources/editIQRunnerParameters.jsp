@@ -55,7 +55,7 @@
 		</th>
 		<td>
 			<div class="posRel">
-				<props:textProperty name="${password}" size="56" maxlength="100"/>
+				<props:passwordProperty name="${password}" size="56" maxlength="100"/>
 				<span class="error" id="error_${password}"/>
 			</div>
 		</td>
