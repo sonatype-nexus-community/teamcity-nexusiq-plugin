@@ -2,15 +2,15 @@
 <teamcity-plugin   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:schemas-jetbrains-com:teamcity-plugin-v1-xml">
   <info>
     <name>teamcity-iq-plugin</name>
-    <display-name>teamcity-iq-plugin</display-name>
+    <display-name>Sonatype Nexus Lifecycle/IQ plugin for TeamCity</display-name>
     <version>@Version@</version>
     <description>Scan Code with Sonatype Nexus IQ</description>
     <download-url>Plugin download URL</download-url>
     <email>ctownshend@sonatype.com</email>
     <vendor>
-      <name>@VendorName@</name>
-      <url>@VendorURL@</url>
-      <logo>Plugin vendor logo URL</logo>
+      <name>Sonatype Nexus Community</name>
+      <url>https://github.com/sonatype-nexus-community/teamcity-nexusiq-plugin</url>
+      <logo>https://avatars.githubusercontent.com/u/33330803</logo>
     </vendor>
   </info>
   <deployment use-separate-classloader="true"/>

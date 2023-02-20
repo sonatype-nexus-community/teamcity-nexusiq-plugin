@@ -8,11 +8,6 @@
   </parent>
   <artifactId>build</artifactId>
   <packaging>pom</packaging>
-  <properties>
-      <teamcity-iq-plugin.plugin.version>${version}</teamcity-iq-plugin.plugin.version>
-      <teamcity-iq-plugin.plugin.vendorName>Plugin vendor name</teamcity-iq-plugin.plugin.vendorName>
-      <teamcity-iq-plugin.plugin.vendorUrl>Plugin vendor URL</teamcity-iq-plugin.plugin.vendorUrl>
-  </properties>
   <dependencies>
       <dependency>
            <groupId>org.sonatype.teamcity</groupId>
@@ -46,19 +41,11 @@
             </executions>
             <configuration>
                 <file>${basedir}/../teamcity-plugin.xml</file>
-                <outputFile>${basedir}/target/teamcity-plugin.xml</outputFile>
+                <outputFile>${project.build.directory}/teamcity-plugin.xml</outputFile>
                 <replacements>
                     <replacement>
                         <token>@Version@</token>
-                        <value>${teamcity-iq-plugin.plugin.version}</value>
-                    </replacement>
-                    <replacement>
-                        <token>@VendorName@</token>
-                        <value>${teamcity-iq-plugin.plugin.vendorName}</value>
-                    </replacement>
-                    <replacement>
-                        <token>@VendorURL@</token>
-                        <value>${teamcity-iq-plugin.plugin.vendorUrl}</value>
+                        <value>${version}</value>
                     </replacement>
                 </replacements>
             </configuration>
