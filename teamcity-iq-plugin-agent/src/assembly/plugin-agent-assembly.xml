@@ -7,8 +7,8 @@
     </formats>
     <files>
         <file>
-            <source>../teamcity-iq-plugin-agent/teamcity-plugin.xml</source>
-            <outputDirectory>/</outputDirectory>
+            <source>src/main/teamcity-plugin.xml</source>
+            <outputDirectory></outputDirectory>
         </file>
     </files>
     <moduleSets>
@@ -32,4 +32,3 @@
         </moduleSet>
     </moduleSets>
 </assembly>
-

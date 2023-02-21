@@ -8,10 +8,10 @@
   <files>
      <file>
          <source>target/teamcity-plugin.xml</source>
-         <outputDirectory>/</outputDirectory>
+         <outputDirectory></outputDirectory>
      </file> 
      <file>
-         <source>target/teamcity-iq-plugin-agent.zip</source>
+         <source>../teamcity-iq-plugin-agent/target/teamcity-iq-plugin-agent.zip</source>
          <outputDirectory>agent</outputDirectory>
      </file> 
   </files>
