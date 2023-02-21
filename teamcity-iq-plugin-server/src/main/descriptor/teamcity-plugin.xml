@@ -3,7 +3,7 @@
   <info>
     <name>teamcity-iq-plugin</name>
     <display-name>Sonatype Nexus Lifecycle/IQ plugin for TeamCity</display-name>
-    <version>@Version@</version>
+    <version>${project.version}</version>
     <description>Scan Code with Sonatype Nexus IQ</description>
     <download-url>Plugin download URL</download-url>
     <email>ctownshend@sonatype.com</email>
