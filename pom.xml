@@ -4,14 +4,14 @@
 
   <groupId>org.sonatype.teamcity</groupId>
   <artifactId>teamcity-iq-plugin</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <scm>
     <connection>scm:git:https://github.com/sonatype-nexus-community/teamcity-nexusiq-plugin.git</connection>
     <developerConnection>scm:git:https://github.com/sonatype-nexus-community/teamcity-nexusiq-plugin.git</developerConnection>
     <url>https://github.com/sonatype-nexus-community/teamcity-nexusiq-plugin/tree/${project.scm.tag}</url>
-    <tag>teamcity-iq-plugin-1.0.0</tag>
+    <tag>main</tag>
   </scm>
   <issueManagement>
     <system>GitHub Issues</system>
@@ -20,7 +20,7 @@
 
   <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-      <project.build.outputTimestamp>1676980005</project.build.outputTimestamp>
+      <project.build.outputTimestamp>1676980014</project.build.outputTimestamp>
       <teamcity-version>2021.1</teamcity-version>
       <!--teamcityDir>C:\Cameron\Software\TeamCity</teamcityDir-->
       <!--teamcityDataDir>${pom.basedir}\data</teamcityDataDir-->
